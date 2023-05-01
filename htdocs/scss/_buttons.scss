@@ -1,0 +1,35 @@
+.btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 22px;
+  border-width: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: $btnRadius;
+  &--s{
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  &--slim{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &.btn-green-outline{
+    color: $primaryGreen;
+    border-color: $primaryGreen;
+    background-color: $white;
+  }
+  &.btn-main{
+    background-color: $gray;
+    border-color: $gray;
+    color: $white;
+  }
+  &.btn-main-outline{
+    background-color: transparent;
+    border-color: $gray;
+    color: $gray;
+  }
+}

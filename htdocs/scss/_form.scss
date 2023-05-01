@@ -1,0 +1,114 @@
+.form-control{
+  background: $bg-form;
+  border: 1px solid $gray200;
+  border-radius: 63px;
+  font-size: 16px;
+  color: $gray700;
+  &:focus {
+    color: $gray700;
+    background-color: $bg-form;
+    border-color: $primaryGreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(122,200,0,.25);
+  }
+}
+.form-label {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  color: $gray700;
+  opacity: 0.5;
+  &--required{
+    &:after{
+      content: '\002A';
+      color: $red;
+    }
+  }
+}
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label{
+  opacity: 1;
+}
+.iti__flag {background-image: url("../img/flags/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../img/flags/flags@2x.png");}
+}
+.iti{
+  width: 100%;
+}
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=tel]{
+  width: 100%;
+  padding: 1rem 0.75rem;
+  padding-left: 52px;
+  background: $bg-form;
+  border: 1px solid $gray200;
+  border-radius: 63px;
+  color: $gray700;
+  &::-webkit-input-placeholder{
+    color: $gray700;
+    opacity: 0.5;
+  }
+  &:focus {
+    color: $gray700;
+    background-color: $bg-form;
+    border-color: $primaryGreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(122,200,0,.25);
+  }
+}
+.iti__selected-flag{
+  border-radius: 63px 0 0 63px;
+}
+.iti__country-list{
+  margin: 4px 0 0 0;
+  box-shadow: none;
+  border: 1px solid $gray200;
+}
+
+.input-file{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+  &-container{
+    position: relative;
+    width: 100%;
+  }
+  &-label{
+    display: block;
+    padding: 15px;
+    transition: all .4s;
+    cursor: pointer;
+    background: transparent;
+    border: 1px dashed $gray400;
+    border-radius: 59px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $gray400;
+    &:hover, &:focus{
+      background: $bg-form;
+    }
+  }
+  &:hover, &:focus{
+    + .input-file-label{
+      background: $bg-form;
+    }
+  }
+}
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
