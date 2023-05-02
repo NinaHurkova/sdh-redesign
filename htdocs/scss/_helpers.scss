@@ -1,0 +1,44 @@
+$primaryDark: #232E50;
+$primaryGreen: #7AC800;
+
+$white: #FFFFFF;
+$whiteSnow: #F3F5F9;
+$black: #000000;
+$gray: #1D1D1F;
+$green: #7CB932;
+$red: #B10909;
+
+$gray25: #FCFCFD;
+$gray50: #F8FAFC;
+$gray100: #EEF2F6;
+$gray200: #E3E8EF;
+$gray300: #CDD5DF;
+$gray400: #9AA4B2;
+$gray500: #697586;
+$gray600: #4B5565;
+$gray700: #364152;
+$gray800: #202939;
+$gray900: #121926;
+
+$bg-color: $white;
+$text-color: $gray;
+$bg-form: $white;
+
+$btnRadius: 43px;
+
+.fs-24{
+  font-size: 24px;
+}
+
+@mixin for-phone-up {
+  @media (min-width: 567px) { @content; }
+}
+@mixin for-tablet-up {
+  @media (min-width: 768px) { @content; }
+}
+@mixin for-desktop-small-up {
+  @media (min-width: 1120px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1366px) { @content; }
+}
