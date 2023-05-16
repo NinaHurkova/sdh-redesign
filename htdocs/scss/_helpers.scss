@@ -20,6 +20,8 @@ $gray700: #364152;
 $gray800: #202939;
 $gray900: #121926;
 
+$blue25: #F5F8FF;
+
 $bg-color: $white;
 $text-color: $gray;
 $bg-form: $white;
@@ -28,6 +30,9 @@ $btnRadius: 43px;
 
 .fs-24{
   font-size: 24px;
+}
+.bg-blue25{
+  background-color: $blue25;
 }
 
 @mixin for-phone-up {

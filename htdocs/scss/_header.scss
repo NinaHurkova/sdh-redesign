@@ -12,6 +12,10 @@
       height: 100%;
     }
   }
+  @media(min-width: 1400px){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .logo-img{
   width: 144px;

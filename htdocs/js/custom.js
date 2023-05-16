@@ -70,6 +70,9 @@ $(document).ready(function() {
     });
 
     // moveOnScroll();
+
+    initFeaturesSlider();
+
 });
 
 function inViewport(el) {
@@ -121,4 +124,25 @@ function moveOnScroll(){
     });
 }
 
-// $(window).on("resize", console.log('resize', $(window).width()), false);
+function initFeaturesSlider(){
+     $('#features').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+         speed: 600,
+         easing: 'swing',
+         vertical: true,
+         arrows: false,
+         centerMode: true,
+         infinite: true,
+        responsive: [
+            {
+                breakpoint: 1120,
+                settings: "unslick"
+            }
+        ]
+    });
+}
+
+$(window).on("resize", initFeaturesSlider, false);
