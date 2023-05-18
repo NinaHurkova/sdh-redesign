@@ -22,52 +22,7 @@ $(document).ready(function() {
         $(resultFile)[0].innerHTML = this.value;
     });
 
-    $('.projects-scroll').each(function () {
-        const scrollRow = $(this).find('.projects-scroll-grid');
-        const leftButton = $(this).find('button.left');
-        const rightButton = $(this).find('button.right');
 
-        let totalWidth = 0;
-        scrollRow.find('.projects-card').each(function(){
-            totalWidth += $(this).width()
-        });
-
-        const firstCard = scrollRow.children('.projects-card').first();
-        const firstCardPosition = firstCard.position();
-        const lastCard = scrollRow.children('.projects-card').last();
-        const lastCardPosition = lastCard.position();
-        const lastCardPositionRight = lastCardPosition.left + lastCard.width();
-
-        if(totalWidth <= $(this).width()){
-            $(leftButton).hide();
-            $(rightButton).hide();
-        }else{
-            $(rightButton).on('click', function () {
-                event.preventDefault();
-                $(scrollRow).animate({
-                    scrollLeft: "+=562px"
-                }, "slow");
-                if(firstCard.position().left < firstCardPosition.left){
-                    leftButton.css('opacity', 1);
-                }else{
-                    leftButton.css('opacity', 0);
-                }
-                console.log(lastCard.position().left, lastCardPosition);
-            });
-            $(leftButton).on('click', function () {
-                event.preventDefault();
-                $(scrollRow).animate({
-                    scrollLeft: "-=562px"
-                }, "slow");
-                if(firstCard.position().left < firstCardPosition.left){
-                    leftButton.css('opacity', 1);
-                }else{
-                    leftButton.css('opacity', 0);
-                }
-                console.log(lastCard.position().left, lastCardPosition);
-            });
-        }
-    });
 
     // moveOnScroll();
 

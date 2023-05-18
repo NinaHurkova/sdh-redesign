@@ -1,27 +1,31 @@
 .hero {
-  padding-top: 165px;
-  padding-bottom: 200px;
   position: relative;
-  background-image: url(../img/home/bg-logo.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 249px;
+  padding-bottom: 200px;
   .container-xxl{
     padding-left: 12.5px;
     padding-right: 12.5px;
   }
+  .title-animated{
+    .shapes{
+      height: calc(3.9em + 165px);
+    }
+  }
   &-title {
+    height: calc(3.9em + 165px) !important;
+    padding-top: 165px;
+    background-image: url(../img/home/bg-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 249px;
+    background-position: center top;
     text-align: center;
-    margin-bottom: 16px;
-    .title-home{
+    h1{
+      font-size: 1em;
+      font-weight: 800;
       margin: 0;
-      font: 800 60px/75px Jakarta, WorkSans, Arial, Helvetica, sans-serif;
       letter-spacing: -0.02em;
-      background: radial-gradient(28.71% 40.53% at 67.43% 53.68%, #7AC800 0%, rgba(122, 200, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #202939;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+      color: #202939;
+      text-align: inherit;
+      cursor: default;
     }
   }
   &-subtitle {
@@ -39,24 +43,19 @@
   &-buttons{
     text-align: center;
   }
-  @include for-tablet-up{
-    &-title{
-      .title-home{
-        font-size: 92px;
-        line-height: 1.3;
+  @include for-desktop-small-up{
+    .title-animated{
+      .shapes{
+        height: calc(2.6em + 153px + 86px);
       }
     }
-  }
-  @include for-desktop-small-up{
-    padding-top: 153px;
-    padding-bottom: 180px;
-    background-position: right top 59px;
-    background-size: 555px;
     &-title{
-      .title-home{
-        font-size: 141px;
-        text-align: left;
-      }
+      text-align: left;
+      height: calc(2.6em + 153px + 86px) !important;
+      padding-top: 153px;
+      padding-bottom: 86px;
+      background-size: 555px;
+      background-position: right center;
     }
     &-subtitle{
       text-align: left;
@@ -66,6 +65,57 @@
     &-buttons{
       text-align: left;
     }
+  }
+}
+.title-animated{
+  position: relative;
+  .shapes {
+    position: relative;
+    height: 2.6em;
+    width: 100%;
+    background: #121926;
+    overflow: hidden;
+  }
+  .shape {
+    --size: 0;
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    transform: translate(-50%, 0);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+  .shape-1{
+    background: radial-gradient(closest-side, #7AC800 0%, rgba(122, 200, 0, 0) 100%);
+  }
+  &:hover{
+    .shape{
+      --size: 484px;
+    }
+  }
+  &-container{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.6em;
+    width: 100%;
+    background-color: #ffffff;
+    mix-blend-mode: screen;
+  }
+}
+.title-home{
+  margin-bottom: 16px;
+  font: 800 60px/1.3 Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  @include for-tablet-up{
+    font-size: 92px;
+  }
+  @include for-desktop-small-up{
+    font-size: 141px;
   }
 }
 
@@ -301,25 +351,24 @@
     row-gap: 28px;
     column-gap: 32px;
   }
-  &-button{
+  &-buttons{
     display: none;
-    position: absolute;
-    top: 190px;
+  }
+  &-button{
+    display: flex;
     font-size: 20px;
-    color: $gray500;
+    color: $gray;
     width: 2em;
     height: 2em;
     padding: 0;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    border: 1px solid currentColor;
     background: $white;
-    box-shadow: 0px 4px 14px rgba(154, 164, 178, 0.79);
-    &.left{
-      left: calc(50vw - 660px);
-    }
-    &.right{
-      right: calc(50vw - 660px);
+    &.inactive{
+      color: $gray400;
+      pointer-events: none;
     }
   }
   @include for-desktop-up{
@@ -341,12 +390,10 @@
         margin-left: calc(50% - 660px);
       }
     }
-    &-button{
+    &-buttons{
+      padding: 4px 0;
       display: flex;
-      transition: opacity 0.3s;
-      &.left{
-        opacity: 0;
-      }
+      gap: 20px;
     }
   }
 }
