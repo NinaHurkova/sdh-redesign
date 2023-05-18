@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     // Animated title
-    let textContainer = document.querySelector('.title-home');
+    let textContainer = document.querySelector('.title-animated-container h1');
     let colorHover = document.querySelector('.shape');
     textContainer.addEventListener('mousemove', e => {
       let rect = e.target.getBoundingClientRect();
@@ -9,6 +9,14 @@ $(document).ready(function() {
       let y = e.clientY - rect.top;
       colorHover.style.setProperty('--x', x + 'px');
       colorHover.style.setProperty('--y', y + 'px');
+    });
+    const shape = $('.title-animated').find('.shape'),
+        title = $('.title-animated').find('h1');
+
+    $(title).mouseenter(function() {
+        $(shape).css('--size', '484px');
+    }).mouseleave(function() {
+        $(shape).css('--size', '0');
     });
 
     // Horizontal scroll for projects

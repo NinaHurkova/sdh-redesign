@@ -945,14 +945,11 @@ body {
   height: var(--size);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  -webkit-transition: width 0.2s ease, height 0.2s ease;
-  transition: width 0.2s ease, height 0.2s ease;
+  -webkit-transition: width 0.3s ease, height 0.3s ease;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 .title-animated .shape-1 {
   background: radial-gradient(closest-side, #7AC800 0%, rgba(122, 200, 0, 0) 100%);
-}
-.title-animated:hover .shape {
-  --size: 484px;
 }
 .title-animated-container {
   top: 0;

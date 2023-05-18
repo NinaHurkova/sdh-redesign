@@ -85,16 +85,16 @@
     width: var(--size);
     height: var(--size);
     transform: translate(-50%, 0);
-    transition: width 0.2s ease, height 0.2s ease;
+    transition: width 0.3s ease, height 0.3s ease;
   }
   .shape-1{
     background: radial-gradient(closest-side, #7AC800 0%, rgba(122, 200, 0, 0) 100%);
   }
-  &:hover{
-    .shape{
-      --size: 484px;
-    }
-  }
+  //&:hover{
+  //  .shape{
+  //    --size: 484px;
+  //  }
+  //}
   &-container{
     top: 0;
     left: 0;
