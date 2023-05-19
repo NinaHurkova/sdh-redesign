@@ -22,11 +22,11 @@ $(document).ready(function() {
         $(resultFile)[0].innerHTML = this.value;
     });
 
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        utilsScript: "htdocs/js/telInput/utils.js"
+    });
 
-
-    // moveOnScroll();
-
-    initFeaturesSlider();
 
 });
 
@@ -42,62 +42,4 @@ function inViewport(el) {
     (uBound >= top && uBound <= bottom);
 }
 
-
-function moveOnScroll(){
-    const firstRow = $('.technology-row.left'),
-        secondRow = $('.technology-row.right'),
-        docHeight = $(document).height(),
-        docWidth = $(window).width(),
-        winHeight = $(window).height(),
-        technology = $('.technology-grid');
-
-    let totalWidth = 0;
-
-    console.log('width', $(window).width())
-
-    firstRow.children().each(function() {
-          totalWidth = totalWidth + $(this)[0].offsetWidth;
-    });
-
-    $(window).scroll(function() {
-        const canUserSeeIt = inViewport(technology);
-
-        const s = $(this).scrollTop();
-
-        const scrollPercent = (s / (docHeight - winHeight));
-
-        const position = (scrollPercent * (docWidth - totalWidth));
-
-
-        if(canUserSeeIt && window.matchMedia("(min-width: 992px)").matches){
-            firstRow.css('transform', 'translate3d(-' + position + 'px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
-            secondRow.css('transform', 'translate3d(' + position + 'px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
-        }else{
-            firstRow.css('transform', 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
-            secondRow.css('transform', 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
-        }
-    });
-}
-
-function initFeaturesSlider(){
-     $('#features').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-         speed: 600,
-         easing: 'swing',
-         vertical: true,
-         arrows: false,
-         centerMode: true,
-         infinite: true,
-        responsive: [
-            {
-                breakpoint: 1120,
-                settings: "unslick"
-            }
-        ]
-    });
-}
-
-$(window).on("resize", initFeaturesSlider, false);
+// $(window).on("resize", moveOnScroll, false);

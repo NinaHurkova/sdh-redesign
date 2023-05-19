@@ -1618,8 +1618,8 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     gap: 24px;
-    -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    -webkit-transform: translateX(var(--x, 0%));
+    transform: translateX(var(--x, 0%));
     will-change: transform;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1862,13 +1862,13 @@ body {
   height: 40px;
   padding: 0;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 4px 14px rgba(154, 164, 178, 0.79);
-  box-shadow: 0 4px 14px rgba(154, 164, 178, 0.79);
+  border: 1px solid currentColor;
   border-radius: 46px;
-  color: #697586;
+  color: #1D1D1F;
+  opacity: 1;
 }
 .carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
-  color: #697586;
+  color: #1D1D1F;
 }
 
 .estimate-wrapper {

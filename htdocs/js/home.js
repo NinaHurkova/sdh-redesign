@@ -1,14 +1,14 @@
 
 $(document).ready(function() {
     // Animated title
-    let textContainer = document.querySelector('.title-animated-container h1');
-    let colorHover = document.querySelector('.shape');
-    textContainer.addEventListener('mousemove', e => {
+    let textContainer = $('.title-animated-container h1');
+    let colorHover = $('.shape');
+    textContainer.on('mousemove', e => {
       let rect = e.target.getBoundingClientRect();
       let x = e.clientX - rect.left;
       let y = e.clientY - rect.top;
-      colorHover.style.setProperty('--x', x + 'px');
-      colorHover.style.setProperty('--y', y + 'px');
+      colorHover.css('--x', x + 'px');
+      colorHover.css('--y', y + 'px');
     });
     const shape = $('.title-animated').find('.shape'),
         title = $('.title-animated').find('h1');
@@ -71,5 +71,27 @@ $(document).ready(function() {
                 }, "slow");
             });
         }
+    });
+
+    // Horizontal scroll for technologies
+    let h =$('.technology-row');
+
+    $(window).scroll(function() {
+        h.each(function () {
+            let offset = this.getBoundingClientRect();
+            let top = offset.top;
+
+
+            if(top < window.innerHeight && top >=0) {
+                if($(this).hasClass('left')){
+                    $(this).css('--x',(top - window.innerHeight)*(100/window.innerHeight)+'%');
+                }else{
+                    $(this).css('--x',(top - window.innerHeight)*(100/window.innerHeight)*(-1)+'%');
+                }
+
+            }
+        })
+
+
     });
 });

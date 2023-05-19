@@ -651,7 +651,7 @@
     &-row{
       flex-wrap: nowrap;
       gap: 24px;
-      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform: translateX(var(--x,0%));
       will-change: transform;
       transform-style: preserve-3d;
       &-item{
@@ -853,11 +853,12 @@
       height: 40px;
       padding: 0;
       background: $white;
-      box-shadow: 0 4px 14px rgba(154, 164, 178, 0.79);
+      border: 1px solid currentColor;
       border-radius: 46px;
-      color: $gray500;
+      color: $gray;
+      opacity: 1;
       &:hover, &:focus{
-        color: $gray500;
+        color: $gray;
       }
     }
   }
