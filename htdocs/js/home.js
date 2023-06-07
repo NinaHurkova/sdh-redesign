@@ -88,10 +88,24 @@ $(document).ready(function() {
                 }else{
                     $(this).css('--x',(top - window.innerHeight)*(100/window.innerHeight)*(-1)+'%');
                 }
-
             }
         })
+    });
 
-
+    const myCollapsible = $('.accordion-collapse');
+    myCollapsible.each(function () {
+        $(this).on('shown.bs.collapse', function () {
+            const targetImg = $(this).data('link'),
+                targetPosition = $('#' + targetImg).data('position');
+            $('.services-img-item').each(function () {
+                const place= $(this).data('position');
+                if(place > targetPosition) {
+                    $(this).css('--position', place - targetPosition);
+                } else if(place < targetPosition) {
+                    $(this).css('--position', 6 - targetPosition + place) ;
+                }
+            });
+            $('#' + targetImg).css('--position', 0);
+        })
     });
 });

@@ -233,6 +233,7 @@
       border-radius: 26px;
       display: inline-flex;
       flex-wrap: nowrap;
+      gap: 4px;
       .nav-link{
         margin: 0;
         padding: 8px 12px;
@@ -412,15 +413,17 @@
   @include for-desktop-small-up{
     &-block{
       display: flex;
-      justify-content: space-between;
       &-item{
         &.left{
-          max-width: 450px;
+          width: 450px;
           margin-right: 20px;
         }
         &.right{
-          display: block;
+          display: flex;
           margin-right: -20px;
+          justify-content: flex-end;
+          flex-grow: 1;
+          overflow: hidden;
         }
       }
     }
@@ -480,41 +483,37 @@
 }
 
 .services-img {
+  width: 100%;
   padding-bottom: calc(32px * 6);
   padding-right: calc(32px * 6);
   position: relative;
   &-item{
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 0;
-  //  тимчасово для зовнішнього вигляду
+    right: 32px;
+    --translate: calc(var(--position) * 32px);
+    z-index: calc(6 - var(--position));
+    transform: translate(var(--translate),var(--translate));
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
     &:nth-child(1){
-      z-index: 6;
+      --position: 0;
     }
     &:nth-child(2){
-      position: absolute;
-      transform: translate(32px, 32px);
-      z-index: 5;
+      --position: 1;
     }
     &:nth-child(3){
-      position: absolute;
-      transform: translate(64px, 64px);
-      z-index: 4;
+      --position: 2;
     }
     &:nth-child(4){
-      position: absolute;
-      transform: translate(96px, 96px);
-      z-index: 3;
+      --position: 3;
     }
     &:nth-child(5){
-      position: absolute;
-      transform: translate(128px, 128px);
-      z-index: 2;
+      --position: 4;
     }
     &:nth-child(6){
-      position: absolute;
-      transform: translate(160px, 160px);
-      z-index: 1;
+      --position: 5;
     }
   }
 }
