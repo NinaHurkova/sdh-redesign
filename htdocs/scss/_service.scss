@@ -1,0 +1,137 @@
+.page-services{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .page-subtitle{
+    max-width: 919px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .page-title{
+    margin-bottom: 28px;
+  }
+  @include for-desktop-small-up{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .page-title{
+      margin-bottom: 32px;
+    }
+  }
+}
+.services-list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &-item{
+    padding: 40px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    &:nth-child(odd){
+      background: $gray50;
+      border-radius: 20px;
+    }
+    &-image{
+      padding: 5px;
+    }
+    &-description {
+      text-align: center;
+    }
+    &-title {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.33;
+      color: $gray900;
+    }
+    &-text{
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $gray700;
+    }
+  }
+  @include for-desktop-small-up{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+    &-item{
+      padding: 80px;
+      flex-direction: row;
+      justify-content: space-between;
+      &:nth-child(odd){
+        flex-direction: row-reverse;
+        border-radius: 40px;
+      }
+      &-description {
+        max-width: 434px;
+        text-align: left;
+      }
+      &-title{
+        font-size: 40px;
+      }
+      &-text{
+        font-size: 22px;
+      }
+    }
+  }
+}
+.slider-rotate-mini{
+  position: relative;
+  width: 281px;
+  height: 281px;
+  margin: auto;
+  @include for-desktop-small-up{
+    width: 450px;
+    height: 450px;
+  }
+}
+
+.slider-rotate-slide {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #FFFFFF;
+  border-radius: 10px;
+  background: #ffffff;
+  opacity: 0.6;
+  filter: blur(1.5px) drop-shadow(17px 21px 69px rgba(154, 164, 178, 0.22));
+  width: 132px;
+  height: 270px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -45%) scale(0.8);
+  transition: transform 0.7s;
+  will-change: transform;
+  &.active{
+    opacity: 1;
+    filter: drop-shadow(17px 21px 59px rgba(154, 164, 178, 0.22));
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 20;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  @include for-desktop-small-up{
+    width: 204px;
+    height: 420px;
+    transform: translate(-10%, -45%) scale(0.8);
+    &.active{
+      transform: translate(-80%, -50%) scale(1);
+    }
+  }
+}
+.achievements-grid--paddings{
+  padding-top: 42px;
+  padding-bottom: 42px;
+  @include for-desktop-small-up{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
