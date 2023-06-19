@@ -222,30 +222,7 @@
   &-tab{
     position: relative;
     padding-bottom: 148px;
-    .nav-tabs{
-      padding: 6px;
-      border: 1px solid $gray200;
-      border-radius: 26px;
-      display: inline-flex;
-      flex-wrap: nowrap;
-      gap: 4px;
-      .nav-link{
-        margin: 0;
-        padding: 8px 12px;
-        background: transparent;
-        border: 0;
-        border-radius: 26px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $gray;
-        &:hover, &.active{
-          background: $gray;
-          color: $gray25;
-          font-weight: 500;
-        }
-      }
-    }
+
     &-header{
       margin-bottom: 40px;
       text-align: center;

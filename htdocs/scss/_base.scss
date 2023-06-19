@@ -174,3 +174,83 @@ body{
     font-size: 18px;
   }
 }
+.nav-tabs{
+  padding: 6px;
+  border: 1px solid $gray200;
+  border-radius: 26px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  white-space: nowrap;
+  .nav-link{
+    margin: 0;
+    padding: 8px 12px;
+    background: transparent;
+    border: 0;
+    border-radius: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $gray;
+    &:hover, &.active{
+      background: $gray;
+      color: $gray25;
+      font-weight: 500;
+    }
+  }
+  &-holder{
+    padding-bottom: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+}
+.pager{
+  &--blog{
+    margin-top: 20px;
+  }
+}
+.pagination{
+  gap: 2px;
+}
+.page-item:not(:first-child) .page-link{
+  margin-left: 0;
+}
+.page-link {
+  border-radius: 8px !important;
+  border: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $gray500;
+  &:hover, &:focus{
+    color: $gray800;
+    box-shadow: none;
+  }
+}
+.page-item.active .page-link{
+  background-color: $gray50;
+  color: $gray800;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $gray50;
+  border-radius: 2.5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gray500;
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $gray700;
+}

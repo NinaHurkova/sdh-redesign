@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1">
+    <title>SDH: Partnership that works for you</title>
+
+    <link rel="stylesheet" href="htdocs/font/font.css">
+
+    <link rel="stylesheet" href="htdocs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="htdocs/css/select2.min.css">
+    <link rel="stylesheet" href="htdocs/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="htdocs/css/slick.css">
+    <link rel="stylesheet" href="htdocs/css/slick-theme.css">
+    <link rel="stylesheet" href="htdocs/css/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="htdocs/js/jquery-3.6.4.min.js"></script>
+    <script src="htdocs/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-theme">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./">
+                        <img src="htdocs/img/logo.svg" class="logo-img" alt="Software Development Hub">
+                    </a>
+                    <a href="#" class="btn btn--s btn-green-outline d-lg-none">Get in touch</a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#navbar"
+                            aria-controls="navbar">
+                        <i class="ph ph-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar" aria-labelledby="label">
+                        <div class="offcanvas-header pb-0">
+                            <h5 class="offcanvas-title invisible" id="label">Offcanvas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto mb-lg-0">
+                                <li>
+                                    <a class="nav-link" href="#">Company</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./project-view.html">Projects</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./services-list.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Industries</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Jobs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link active" aria-current="page" href="./blog-list.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="navigation-buttons">
+                                <a href="#" class="btn btn--slim btn-green-outline d-none d-lg-flex">Get in touch</a>
+                                <form action="">
+                                    <div class="select-lang d-none d-lg-block">
+                                        <select name="" id="" class="selectpicker" style="width: 105px;">
+                                            <option value="eng">Eng</option>
+                                            <option value="de">De</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-lg-none">
+                                        <div class="input-group-switch">
+                                            <div class="switch">
+                                                <input type="radio" id="eng" name="switch-eng" value="eng" checked/>
+                                                <label for="eng">Eng</label>
+                                            </div>
+                                            <div class="switch">
+                                                <input type="radio" id="de" name="switch-eng" value="de"/>
+                                                <label for="de">De</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <nav aria-label="breadcrumb">
+                <div class="container-xxl">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="\">Home</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                </div>
+            </nav>
+            <div class="container-xxl">
+                <section class="section-page section-page--sm">
+                    <h1 class="blog-list-title title-colored">Blog on Software Development</h1>
+                </section>
+            </div>
+            <div class="container-xxl">
+                <section class="blog-list">
+                    <div class="nav-tabs-holder">
+                        <ul class="nav nav-tabs" id="blogsTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active"
+                                        id="all-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#all"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="all"
+                                        aria-selected="true">
+                                    All
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="business-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#business"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="business"
+                                        aria-selected="false">
+                                    Business
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="consulting-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#consulting"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="consulting"
+                                        aria-selected="false">
+                                    IT Consulting
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="marketing-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#marketing"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="marketing"
+                                        aria-selected="false">
+                                    Marketing
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="mobile-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#mobile"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="mobile"
+                                        aria-selected="false">
+                                    Mobile
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="life-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#life"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="life"
+                                        aria-selected="false">
+                                    SDH Life
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="development-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#development"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="development"
+                                        aria-selected="false">
+                                    Development
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                        id="design-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#design"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="design"
+                                        aria-selected="false">
+                                    Design
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="blog-list-grid">
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/blog-empty.png" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>May 26, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            How Can IoT Benefit Environment? Sustainable IoT Solutions
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/image-dublin.jpg" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>June 14, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            Software Development Hub at Dublin Tech Summit
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/image-austria.jpg" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>June 14, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            SDH at ViennaUP`23 in Austria
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pager pager--blog">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="quick-call section-fw">
+                <div class="quick-call-block">
+                    <div class="container-xxl">
+                        <div class="quick-call-grid">
+                            <div class="quick-call-text">
+                                <span>Get a free estimate or a quick call with the SDH tech expert?</span>
+                            </div>
+                            <div class="quick-call-button">
+                                <a href="#" class="btn btn-white">Get in touch<i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="footer-top-grid">
+                        <div class="footer-name">
+                            <a href="\" class="footer-logo">
+                                <img src="htdocs/img/logo.svg" alt="">
+                            </a>
+                            <p class="footer-moto">
+                                SDH is a team of experts in custom software, web & mobile app development for partners worldwide.
+                                We help product teams & startups achieve their goals through IT outsourcing.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="footer-nav">
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Company</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Services</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Industries</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-block">
+                                    <h5 class="footer-title">Offices</h5>
+                                    <p class="footer-contact-line">61057, Pushkinska Street 32, <span class="d-block d-xxl-inline">Kharkiv, Ukraine</span></p>
+                                    <p class="footer-contact-line">20537, Anckelmannspaltz 1, <span class="d-block d-xxl-inline">Hamburg, Germany</span></p>
+                                </div>
+                                <div class="footer-contact-block">
+                                    <h5 class="footer-title">Contact</h5>
+                                    <p class="footer-contact-line">+490 402 360 8920</p>
+                                    <p class="footer-contact-line">info@sdh-it.com</p>
+                                </div>
+                            </div>
+                            <div class="footer-social">
+                                <h5 class="footer-title">Social</h5>
+                                <div class="footer-social-grid">
+                                    <a href="#" class="social-link"><i class="ph-fill ph-twitter-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-linkedin-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-facebook-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-bold ph-instagram-logo"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="footer-bottom-grid">
+                        <div class="copyright">&copy; Software Development Hub 2014-2023. All Rights Reserved</div>
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-bottom-links-item">Privacy Policy</a>
+                            <a href="#" class="footer-bottom-links-item">Data protection</a>
+                            <a href="#" class="footer-bottom-links-item">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="htdocs/js/select2.full.min.js"></script>
+    <script src="htdocs/js/telInput/intlTelInput.js"></script>
+    <script src="htdocs/js/custom.js"></script>
+
+    <!--Extra js-->
+    <!--<script src="htdocs/js/services-list.js"></script>-->
+</body>
+</html>
