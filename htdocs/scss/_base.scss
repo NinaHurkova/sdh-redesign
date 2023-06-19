@@ -81,8 +81,8 @@ body{
     padding-top: 300px;
     padding-bottom: 300px;
     &--sm{
-      padding-top: 150px;
-      padding-bottom: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
   }
   &--xs{
@@ -94,6 +94,21 @@ body{
   margin-bottom: 60px;
   @include for-desktop-up{
     margin-bottom: 90px;
+  }
+}
+.section-fw{
+  padding-left: 20px;
+  padding-right: 20px;
+  &-inner-gray{
+    background: $gray50;
+    border-radius: 32px;
+  }
+  @include for-desktop-small-up{
+    padding-left: 60px;
+    padding-right: 60px;
+    &-inner{
+      border-radius: 40px;
+    }
   }
 }
 .breadcrumb{

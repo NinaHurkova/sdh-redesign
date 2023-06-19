@@ -6,6 +6,8 @@ $whiteSnow: #F3F5F9;
 $black: #000000;
 $gray: #1D1D1F;
 $green: #7CB932;
+$greenDark: #72AB2E;
+$greenLight: #B9DF8B;
 $red: #B10909;
 
 $gray25: #FCFCFD;
@@ -33,6 +35,19 @@ $btnRadius: 43px;
 }
 .bg-blue25{
   background-color: $blue25;
+}
+.color-green-dark{
+  color: $greenDark;
+}
+.color-green-light{
+  color: $greenLight;
+}
+.color-green{
+  color: $green;
+}
+.label--gray{
+  background-color: $gray100;
+  color: $gray700;
 }
 
 @mixin for-phone-up {

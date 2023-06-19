@@ -164,10 +164,9 @@
   }
 }
 .achievements {
-  padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &-block{
-    background-color: $gray50;
-    border-radius: 40px;
     padding: 37px 0;
   }
   &-list {
@@ -212,10 +211,6 @@
     }
   }
   @include for-desktop-small-up{
-    padding: 40px 60px;
-    &-block{
-      padding: 60px 0;
-    }
     &-list{
       img{
         height: 80px;
@@ -469,6 +464,8 @@
       }
       &:not(.collapsed){
         box-shadow: none;
+      }
+      &[aria-expanded="true"]{
         &::after{
           content: '-';
           color: $gray500;
@@ -864,10 +861,8 @@
 }
 .estimate{
   &-wrapper{
-    margin: 0 20px;
-    background: $gray50;
-    border-radius: 30px;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   &-title{
     text-align: center;
@@ -875,8 +870,8 @@
   }
   @include for-desktop-small-up{
     &-wrapper{
-      margin: 0 60px;
-      padding: 90px;
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
     &-grid{
       max-width: 1094px;
