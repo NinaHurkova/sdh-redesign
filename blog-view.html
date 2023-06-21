@@ -1,10 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1">
+    <title>SDH: Partnership that works for you</title>
+
+    <link rel="stylesheet" href="htdocs/font/font.css">
+
+    <link rel="stylesheet" href="htdocs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="htdocs/css/select2.min.css">
+    <link rel="stylesheet" href="htdocs/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="htdocs/css/slick.css">
+    <link rel="stylesheet" href="htdocs/css/slick-theme.css">
+    <link rel="stylesheet" href="htdocs/css/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="htdocs/js/jquery-3.6.4.min.js"></script>
+    <script src="htdocs/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-theme">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./">
+                        <img src="htdocs/img/logo.svg" class="logo-img" alt="Software Development Hub">
+                    </a>
+                    <a href="#" class="btn btn--s btn-green-outline d-lg-none">Get in touch</a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#navbar"
+                            aria-controls="navbar">
+                        <i class="ph ph-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar" aria-labelledby="label">
+                        <div class="offcanvas-header pb-0">
+                            <h5 class="offcanvas-title invisible" id="label">Offcanvas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto mb-lg-0">
+                                <li>
+                                    <a class="nav-link" href="#">Company</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./project-view.html">Projects</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./services-list.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Industries</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Jobs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link active" aria-current="page" href="./blog-list.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="navigation-buttons">
+                                <a href="#" class="btn btn--slim btn-green-outline d-none d-lg-flex">Get in touch</a>
+                                <form action="">
+                                    <div class="select-lang d-none d-lg-block">
+                                        <select name="" id="" class="selectpicker" style="width: 105px;">
+                                            <option value="eng">Eng</option>
+                                            <option value="de">De</option>
+                                        </select>
+                                    </div>
 
+                                    <div class="d-lg-none">
+                                        <div class="input-group-switch">
+                                            <div class="switch">
+                                                <input type="radio" id="eng" name="switch-eng" value="eng" checked/>
+                                                <label for="eng">Eng</label>
+                                            </div>
+                                            <div class="switch">
+                                                <input type="radio" id="de" name="switch-eng" value="de"/>
+                                                <label for="de">De</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <nav aria-label="breadcrumb">
+                <div class="container-xxl">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="\">Home</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item">
+                            <a href="./blog-list.html">Blog</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item">
+                            <a href="./blog-list.html">Development</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item active" aria-current="page">5 Python Frameworks for Web App Development</li>
+                    </ol>
+                </div>
+            </nav>
+            <div class="one-blog">
+                <div class="container-xxl">
+                    <div class="one-blog-header">
+                        <h1 class="blog-title">5 Python Frameworks for Web App Development</h1>
+                        <div class="blog-meta">
+                            <span>May 26, 2023</span>
+                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                            <span><i class="ph ph-eye"></i> 44</span>
+                        </div>
+                        <div class="blog-author-list">
+                            <div class="blog-author-list-item">
+                                <div class="blog-author-list-image">
+                                    <img src="./htdocs/img/image-15.png" alt="">
+                                </div>
+                                <div class="blog-author-list-person">
+                                    <span class="blog-author-name">Richard Bilous</span>
+                                    <span class="blog-author-position">Python Dev</span>
+                                </div>
+                            </div>
+                            <div class="blog-author-list-item">
+                                <div class="blog-author-list-image">
+                                    <img src="./htdocs/img/image-17.png" alt="">
+                                </div>
+                                <div class="blog-author-list-person">
+                                    <span class="blog-author-name">Richard Bilous</span>
+                                    <span class="blog-author-position">Python Dev</span>
+                                </div>
+                            </div>
+                            <div class="blog-author-list-item">
+                                <div class="blog-author-list-image">
+                                    <img src="./htdocs/img/image-17.png" alt="">
+                                </div>
+                                <div class="blog-author-list-person">
+                                    <span class="blog-author-name">Richard Bilous</span>
+                                    <span class="blog-author-position">Python Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-blog-banner">
+                        <img src="./htdocs/img/blog-banner.jpg" alt="">
+                    </div>
+                    <section class="one-blog-body">
+                        <div class="one-blog-contents">
+                            <div class="contents top-header">
+                                <h4 class="contents-title">Contents</h4>
+                                <div class="contents-list">
+                                    <a href="#" class="contents-list-item">Best Full Stack Frameworks</a>
+                                    <a href="#" class="contents-list-item">Django</a>
+                                    <a href="#" class="contents-list-item">Flask</a>
+                                    <a href="#" class="contents-list-item">Best asynchronous frameworks</a>
+                                    <a href="#" class="contents-list-item">AIOHTTP</a>
+                                    <a href="#" class="contents-list-item">Sanic</a>
+                                    <a href="#" class="contents-list-item">Tornado</a>
+                                    <a href="#" class="contents-list-item">What is the best framework for web development using Python?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-blog-text">
+                            <h2>Python is a popular programming language that benefits from simple syntax, comprehensive libraries, and working tools for automating development and testing.</h2>
+                            <p>Python frameworks are used for <a href="#">developing web applications</a>, big data and data analysis, machine earning, and many other popular areas. A product written in Python makes a website or platform more productive, scalable, and functional, regardless of its initial set of tasks and capabilities. An іspecific feature of Python is the lack of support for built-in functions you can speed up the application with. Therefore, deploying frameworks will allow you to cope with this task. Below we have provided a list of Python frameworks with high reliability and performance.</p>
+                            <p><img src="./htdocs/img/py-1.png" alt=""></p>
+                            <h3>Best Full Stack Frameworks</h3>
+                            <p>This category of frameworks contains a set of necessary tools for creating a full-fledged product, most often a large project. These include the MVC architecture, ORM (Object-Relational Mapping), template engines, and routers.</p>
+                            <h4>Django</h4>
+                            <p>Django is a high-level framework that makes development faster and more productive. The framework is based on minimizing the amount of code, which reduces the time and cost of web development. Framework features:</p>
+                            <ul>
+                                <li>MTV architecture (Model-Template-View).</li>
+                                <li>Built-in ORM (Object-Relational Mapping) without the need to write SQL queries.</li>
+                                <li>Ability to create an administrative interface out of the box.</li>
+                                <li>Many ready-made standard components and applications (user authentication, form processing, caching) exist.</li>
+                                <li>Security (SQL Injection/CSRF (Cross-Site Request Forgery)).</li>
+                                <li>Template support — Django allows you to create templates for generating HTML pages.</li>
+                                <li>Multilingual support.</li>
+                            </ul>
+                            <p>What are the benefits of using Django? The basic functionality has been developed by professional developers and comes bundled, the functions are guaranteed to work without errors. The framework is constantly being improved and has documentation that makes it easy to understand and use the functions. A project written using Django is scalable, and the data is managed through the admin panel.</p>
+                            <p>Django is not a very suitable solution for creating small projects and projects where high performance is needed. Django was used to write Instagram and Spotify.</p>
+                            <p>To hire a high-skilled <a href="https://sdh.global/services/python-django-software-development/">Django developer team</a>, contact us! The SDH team provides a competitive level of Python/Django development services at an affordable flat rate of $38. &nbsp;</p>
+                            <h4>Flask</h4>
+                            <p>The main Python frameworks for web development include Flask, which is available under the BSD license. It combines the Werkzeug WSGI toolkit and the Jinja2 template. The framework allows you to create a reliable, well-functioning web application.</p>
+                            <p>The component was created for writing open applications, it shows the greatest efficiency in working with small, simple projects, although it is used by large companies such as LinkedIn and Pinterest. Key Features:</p>
+                            <ul>
+                                <li>Built-in development server;</li>
+                                <li>Dispatching RESTful requests;</li>
+                                <li>Using Jinja2 templates;</li>
+                                <li>Fully compatible with WSG 1.0.</li>
+                            </ul>
+                            <p>Several extensions make it easy to integrate new features of the Python front-end framework.</p>
+                            <h3>Best asynchronous frameworks</h3>
+                            <p>Asynchronous coding has been around for years in web development, but there are few frameworks to support it. According to the methodology of asynchronous coding, in the course of work, it is possible to perform tasks not sequentially, but in parallel, before the first one is completed. The basis for the operation of asynchronous frameworks is the asyncio libraries.</p>
+                            <h4>AIOHTTP</h4>
+                            <p>AIOHTTP is an asynchronous HTTP client server. In fact, it acts as the Python language library, with the help of which clients' requests are executed and a web server with streaming issuance and web sockets is created. The technology facilitates the rapid data exchange between the user and the server, determining the product's performance. The framework features the following:</p>
+                            <ul>
+                                <li>ensures the execution of several operations, establishing connections without completing the previous ones;</li>
+                                <li>increases the speed of the application by reducing the waiting time for I / O;</li>
+                                <li>allows parallel execution of tasks in projects where multithreading is not expected.</li>
+                            </ul>
+                            <h4>Sanic</h4>
+                            <p>A Python developer uses Sanic to create lock-free code that starts quickly. Among the positive aspects of the web framework are as follows:</p>
+                            <ul>
+                                <li>simple and easy to use, which is possible due to the intuitive and understandable API with smart default settings. The framework allows you to start working without delay immediately;</li>
+                                <li>flexible, performant, and scalable component, ideal for building both small and large applications;</li>
+                                <li>delivery complete with a web server provides instant readiness for work;</li>
+                                <li>a lot of active users and good reviews confirm the reliability and functionality of the framework;</li>
+                                <li>The community of professional developers supports the use of Sanic.</li>
+                            </ul>
+                            <p>This Python backend framework speeds up tasks in an application that professional developers trust.</p>
+                            <h4>Tornado</h4>
+                            <p>The original Python Tornado library uses a non-blocking I/O framework to handle over 10,000 concurrent connections. This is the best option for creating products that have high requirements in terms of quality and processing for a large number of users.</p>
+                            <p>Tornado’s key features are as follows:</p>
+                            <ul>
+                                <li>designed to implement third-party authentication and authorization schemes;</li>
+                                <li>provides high-quality and real-time service;</li>
+                                <li>gives the necessary performance and speed;</li>
+                                <li>supports web templates.</li>
+                            </ul>
+                            <h4>Comparison of Python frameworks</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Framework</p>
+                                        </td>
+                                        <td>
+                                            <p>Type</p>
+                                        </td>
+                                        <td>
+                                            <p>Async Support</p>
+                                        </td>
+                                        <td>
+                                            <p>ORM/ODM</p>
+                                        </td>
+                                        <td>
+                                            <p>Template Engine</p>
+                                        </td>
+                                        <td>
+                                            <p>Routing</p>
+                                        </td>
+                                        <td>
+                                            <p>Scalability</p>
+                                        </td>
+                                        <td>
+                                            <p>Popularity</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Django</span>
+                                        </td>
+                                        <td>
+                                            <span>Full-Stack</span>
+                                        </td>
+                                        <td>
+                                            <span>Async support available in version 3.1+</span>
+                                        </td>
+                                        <td>
+                                            <span>Yes (Django ORM)</span>
+                                        </td>
+                                        <td>
+                                            <span>Django Template Language</span>
+                                        </td>
+                                        <td>
+                                            <span>Yes</span>
+                                        </td>
+                                        <td>
+                                            <span>Vertical</span>
+                                        </td>
+                                        <td>
+                                            <span>Very Popular</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flask</td>
+                                        <td>Micro</td>
+                                        <td>No, but can be used with other async libraries</td>
+                                        <td>No (can be used with external libraries)</td>
+                                        <td>Jinja2</td>
+                                        <td>Yes</td>
+                                        <td>Horizontal</td>
+                                        <td>Popular</td>
+                                    </tr>
+                                    <tr>
+                                        <td>aiohttp</td>
+                                        <td>Async Web</td>
+                                        <td>Yes</td>
+                                        <td>No (can be used with external libraries)</td>
+                                        <td>Jinja2</td>
+                                        <td>Yes</td>
+                                        <td>Horizontal</td>
+                                        <td>Growing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanic</td>
+                                        <td>Async Web</td>
+                                        <td>Yes</td>
+                                        <td>No (can be used with external libraries)</td>
+                                        <td>Jinja2</td>
+                                        <td>Yes</td>
+                                        <td>Horizontal</td>
+                                        <td>Growing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tornado</td>
+                                        <td>Async Web</td>
+                                        <td>Yes</td>
+                                        <td>No (can be used with external libraries)</td>
+                                        <td>Tornado Template Language</td>
+                                        <td>Yes</td>
+                                        <td>Horizontal</td>
+                                        <td>Moderate</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Framework Types:</p>
+                            <ul>
+                                <li>Full-Stack: Provides all the components needed for building a complete web application (e.g., routing, ORM/ODM, template engine, etc.).</li>
+                                <li>Micro: Provides minimalistic functionality, with the option to add additional libraries as needed.</li>
+                                <li>Async Web: Built specifically to handle asynchronous requests and responses.</li>
+                            </ul>
+                            <p>Async Support:</p>
+                            <ul>
+                                <li>Yes: The framework provides built-in support for asynchronous programming.</li>
+                                <li>No: The framework does not provide built-in support for asynchronous programming, but can be used with other async libraries.</li>
+                            </ul>
+                            <p>ORM/ODM:</p>
+                            <ul>
+                                <li>Yes: The framework provides a built-in Object-Relational Mapping or Object-Document Mapping library for database operations.</li>
+                                <li>No: The framework does not provide a built-in ORM/ODM library, but can be used with external libraries.</li>
+                            </ul>
+                            <p>Template Engine:</p>
+                            <ul>
+                                <li>Django Template Language: The framework provides its own template language for rendering views.</li>
+                                <li>Jinja2: The framework can use Jinja2, an external template engine.</li>
+                                <li>Tornado Template Language: The framework provides its own template language for rendering views.</li>
+                            </ul>
+                            <p>Routing:</p>
+                            <ul>
+                                <li>Yes: The framework provides built-in routing functionality for defining URLs and mapping them to views.</li>
+                                <li>No: The framework does not provide built-in routing functionality, but can be used with external libraries.</li>
+                            </ul>
+                            <p>Scalability:</p>
+                            <ul>
+                                <li>Vertical: The framework is optimized for scaling up (i.e., adding more resources to a single server instance).</li>
+                                <li>Horizontal: The framework is optimized for scaling out (i.e., distributing requests across multiple server instances).</li>
+                            </ul>
+                            <p>Popularity:</p>
+                            <ul>
+                                <li>Very Popular: The framework has a large community and is widely used in industry.</li>
+                                <li>Popular: The framework has a significant user base and is commonly used in industry.</li>
+                                <li>Growing: The framework is gaining popularity and has an increasing number of users.</li>
+                                <li>Moderate: The framework has a smaller user base and may not be as widely used in industry.</li>
+                            </ul>
+                            <p><img src="./htdocs/img/py-2.png" alt=""></p>
+                            <h2>What is the best framework for web development using Python?</h2>
+                            <p>The <a href="https://sdh.global/">Software Development Hub</a>&nbsp;team implements projects of any direction and scale, selecting the best methods and development tools. Our experts use the full stack and asynchronous Python frameworks to write <a href="https://sdh.global/services/web-app-development/">web applications</a> that will unlock the potential of your <a href="https://sdh.global/services/startup/">startup</a> and scale your client's business.</p>
+                            <h4 class="chapter-title">Categories</h4>
+                            <div class="tag-list">
+                                <span class="label label--gray ">Python</span>
+                                <span class="label label--gray ">Frameworks</span>
+                                <span class="label label--gray ">Development</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="chapter-title">Share</h4>
+                                <div class="social-list">
+                                    <a href="#" class="social-list-link"><i class="ph ph-twitter-logo"></i></a>
+                                    <a href="#" class="social-list-link"><i class="ph ph-facebook-logo"></i></a>
+                                    <a href="#" class="social-list-link"><i class="ph ph-linkedin-logo"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-blog-sidebar">
+                            <div class="sidebar-banner top-header">
+                                <img src="./htdocs/img/logo-green.svg" class="sidebar-banner-image" alt="">
+                                <h4 class="sidebar-banner-title">Discuss your project</h4>
+                                <a href="#" class="btn btn--slim btn-green-outline">Get in touch <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="one-blog-bottom">
+                        <h2 class="one-blog-bottom-title">Recent posts</h2>
+                        <div class="blog-list-grid">
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/blog-empty.png" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>May 26, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            How Can IoT Benefit Environment? Sustainable IoT Solutions
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/image-dublin.jpg" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>June 14, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            Software Development Hub at Dublin Tech Summit
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="blog-list-grid-item">
+                                    <a href="./blog-view.html" class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="./htdocs/img/image-austria.jpg" alt="">
+                                        </div>
+                                        <div class="blog-card-meta">
+                                            <span>June 14, 2023</span>
+                                            <span><i class="ph ph-clock"></i> 11 min read</span>
+                                            <span><i class="ph ph-eye"></i> 44</span>
+                                        </div>
+                                        <div class="blog-card-title">
+                                            SDH at ViennaUP`23 in Austria
+                                        </div>
+                                        <div class="blog-card-author-list">
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-15.png" alt="">
+                                                </div>
+                                                <span>Vasyl Kuchma</span>
+                                            </div>
+                                            <div class="blog-card-author-list-item">
+                                                <div class="blog-card-author-list-image">
+                                                    <img src="./htdocs/img/image-17.png" alt="">
+                                                </div>
+                                                <span>Natalia Barashkova</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <section class="quick-call section-fw">
+                <div class="quick-call-block">
+                    <div class="container-xxl">
+                        <div class="quick-call-grid">
+                            <div class="quick-call-text">
+                                <span>Get a free estimate or a quick call with the SDH tech expert?</span>
+                            </div>
+                            <div class="quick-call-button">
+                                <a href="#" class="btn btn-white">Get in touch<i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="footer-top-grid">
+                        <div class="footer-name">
+                            <a href="\" class="footer-logo">
+                                <img src="htdocs/img/logo.svg" alt="">
+                            </a>
+                            <p class="footer-moto">
+                                SDH is a team of experts in custom software, web & mobile app development for partners worldwide.
+                                We help product teams & startups achieve their goals through IT outsourcing.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="footer-nav">
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Company</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Services</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Industries</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-block">
+                                    <h5 class="footer-title">Offices</h5>
+                                    <p class="footer-contact-line">61057, Pushkinska Street 32, <span class="d-block d-xxl-inline">Kharkiv, Ukraine</span></p>
+                                    <p class="footer-contact-line">20537, Anckelmannspaltz 1, <span class="d-block d-xxl-inline">Hamburg, Germany</span></p>
+                                </div>
+                                <div class="footer-contact-block">
+                                    <h5 class="footer-title">Contact</h5>
+                                    <p class="footer-contact-line">+490 402 360 8920</p>
+                                    <p class="footer-contact-line">info@sdh-it.com</p>
+                                </div>
+                            </div>
+                            <div class="footer-social">
+                                <h5 class="footer-title">Social</h5>
+                                <div class="footer-social-grid">
+                                    <a href="#" class="social-link"><i class="ph-fill ph-twitter-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-linkedin-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-facebook-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-bold ph-instagram-logo"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="footer-bottom-grid">
+                        <div class="copyright">&copy; Software Development Hub 2014-2023. All Rights Reserved</div>
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-bottom-links-item">Privacy Policy</a>
+                            <a href="#" class="footer-bottom-links-item">Data protection</a>
+                            <a href="#" class="footer-bottom-links-item">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="htdocs/js/select2.full.min.js"></script>
+    <script src="htdocs/js/custom.js"></script>
+
+    <!--Extra js-->
+    <script src="htdocs/js/blog.js"></script>
 </body>
 </html>
