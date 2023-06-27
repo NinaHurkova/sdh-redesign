@@ -258,3 +258,32 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: $gray700;
 }
+.structure-custom-list{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: $gray700;
+    &:before{
+      content: '';
+      flex-shrink: 0;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background-color: $green;
+    }
+  }
+  @include for-desktop-small-up{
+    li{
+      font-size: 20px;
+    }
+  }
+}
