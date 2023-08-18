@@ -17,6 +17,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  &.btn-green{
+    color: $white;
+    border-color: $green;
+    background-color: $green;
+  }
   &.btn-green-outline{
     color: $primaryGreen;
     border-color: $primaryGreen;

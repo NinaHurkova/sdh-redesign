@@ -23,6 +23,10 @@ $gray800: #202939;
 $gray900: #121926;
 
 $blue25: #F5F8FF;
+$grayF4: #F4F4F4;
+
+$ehr: #2970FF;
+$terneo: #FFC107;
 
 $bg-color: $white;
 $text-color: $gray;
@@ -33,8 +37,23 @@ $btnRadius: 43px;
 .fs-24{
   font-size: 24px;
 }
+.bg-grayF4{
+  background-color: $grayF4;
+}
 .bg-blue25{
   background-color: $blue25;
+}
+.bg-ehr{
+  background-color: $ehr;
+}
+.color-ehr{
+  color: $ehr;
+}
+.bg-terneo{
+  background-color: $terneo;
+}
+.color-terneo{
+  color: $terneo;
 }
 .color-green-dark{
   color: $greenDark;
@@ -48,6 +67,11 @@ $btnRadius: 43px;
 .label--gray{
   background-color: $gray100;
   color: $gray700;
+}
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @mixin for-phone-up {

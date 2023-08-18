@@ -125,6 +125,9 @@ body{
     text-decoration: none;
     white-space: nowrap;
   }
+  a{
+    text-decoration: underline;
+  }
   &-item{
     &.active{
       font-weight: 400;
@@ -149,6 +152,15 @@ body{
   padding-bottom: 90px;
   @include for-desktop-small-up{
     padding-top: 74px;
+  }
+}
+.page-header-block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  @include for-desktop-small-up{
+    gap: 32px;
   }
 }
 .page-title{

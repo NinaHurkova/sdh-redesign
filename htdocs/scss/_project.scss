@@ -96,7 +96,7 @@
     max-width: 290px;
     margin: 0;
     font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 28px;
     line-height: 1.5;
     color: $gray900;
@@ -230,6 +230,20 @@
   }
   &:after{
     background-image: url(../img/projects/bg-med-right.png);
+    background-repeat: repeat-y;
+    background-position: 100% 1761px;
+    animation: bgMoveTop 30s linear infinite;
+  }
+}
+.bg-terneo-1{
+  &:before{
+    background-image: url(../img/projects/bg-terneo-left.png);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    animation: bgMoveBottom 30s linear infinite;
+  }
+  &:after{
+    background-image: url(../img/projects/bg-terneo-right.png);
     background-repeat: repeat-y;
     background-position: 100% 1761px;
     animation: bgMoveTop 30s linear infinite;
@@ -457,4 +471,8 @@
       font-size: 61px;
     }
   }
+}
+.product-screen {
+  display: flex;
+  gap: 50px;
 }

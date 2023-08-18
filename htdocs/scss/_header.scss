@@ -51,9 +51,31 @@
     padding: 1rem .75rem;
     font-size: 18px;
     color: $black;
+    &.dropdown-toggle{
+      &:after{
+        content: none;
+      }
+      .icon{
+        display: inline-block;
+        vertical-align: -0.1em;
+        color: $gray500;
+      }
+    }
+  }
+  .dropdown-menu{
+    padding-top: 0;
+    padding-bottom: 0;
+    .dropdown-item:focus,
+    .dropdown-item:hover,
+    .dropdown-item.active,
+    .dropdown-item:active{
+      color: $primaryGreen;
+      background-color: transparent;
+    }
   }
   @media(min-width: 992px){
     gap: 0;
+    align-items: flex-start;
     li+li{
       border-top: 0;
     }
@@ -65,9 +87,19 @@
       align-items: center;
       padding-left: 12px;
       padding-right: 12px;
+      padding-top: 2rem;
       border-top: 2px solid transparent;
       &:hover{
         border-color: $primaryGreen;
+      }
+      &.active{
+        border-color: $primaryGreen;
+        color: $primaryGreen;
+        &.dropdown-toggle{
+          .icon{
+            color: $primaryGreen;
+          }
+        }
       }
     }
   }
