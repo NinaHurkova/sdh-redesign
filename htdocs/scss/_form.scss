@@ -4,12 +4,15 @@
   border-radius: 63px;
   font-size: 16px;
   color: $gray700;
+  &:hover{
+    box-shadow: 0 0 0 4px $gray100;
+  }
   &:focus {
     color: $gray700;
     background-color: $bg-form;
-    border-color: $primaryGreen;
+    border-color: $green;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(122,200,0,.25);
+    box-shadow: none;
   }
 }
 .form-label {
@@ -51,12 +54,15 @@
     color: $gray700;
     opacity: 0.5;
   }
+  &:hover{
+    box-shadow: 0 0 0 4px $gray100;
+  }
   &:focus {
     color: $gray700;
     background-color: $bg-form;
-    border-color: $primaryGreen;
+    border-color: $green;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(122,200,0,.25);
+    box-shadow: none;
   }
 }
 .iti__selected-flag{
@@ -85,19 +91,26 @@
     transition: all .4s;
     cursor: pointer;
     background: transparent;
-    border: 1px dashed $gray400;
+    border: 1px dashed currentColor;
     border-radius: 59px;
     text-align: center;
     font-size: 18px;
     line-height: 1.4;
-    color: $gray400;
+    color: $gray500;
     &:hover, &:focus{
       background: $bg-form;
     }
   }
-  &:hover, &:focus{
+  &:hover{
     + .input-file-label{
       background: $bg-form;
+      color: $gray700;
+    }
+  }
+  &:focus{
+    + .input-file-label{
+      background: $bg-form;
+      color: $btnDarkGreen;
     }
   }
 }
@@ -115,4 +128,12 @@
 .form-check-label{
   font-size: 14px;
   color: $gray500;
+}
+.form-check-input:checked{
+  background-color: $green;
+  border-color: $green;
+}
+.form-check-input:focus{
+  box-shadow: none;
+  border-color: $green;
 }
