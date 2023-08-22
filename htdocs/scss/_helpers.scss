@@ -33,6 +33,12 @@ $text-color: $gray;
 $bg-form: $white;
 
 $btnRadius: 43px;
+$br-mobile-m: 24px;
+$br-mobile-l: 32px;
+$br-desktop-m: 32px;
+$br-desktop-l: 40px;
+
+$btnDarkGreen: #5E941E;
 
 .fs-24{
   font-size: 24px;
@@ -72,6 +78,9 @@ $btnRadius: 43px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.object-top{
+  object-position: top;
 }
 
 @mixin for-phone-up {

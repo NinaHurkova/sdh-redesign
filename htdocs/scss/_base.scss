@@ -162,6 +162,13 @@ body{
   @include for-desktop-small-up{
     gap: 32px;
   }
+  &--jobs{
+    gap: 28px;
+    .page-subtitle{
+      max-width: 561px !important;
+      margin: 0 auto;
+    }
+  }
 }
 .page-title{
   margin: 0;
