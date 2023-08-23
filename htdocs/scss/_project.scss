@@ -151,9 +151,10 @@
   }
 }
 .p-profile{
-  &-header{
-    margin-bottom: 40px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
   &-title{
     margin: 0;
     font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
@@ -179,9 +180,7 @@
     }
   }
   @include for-desktop-small-up {
-    &-header {
-      margin-bottom: 80px;
-    }
+    gap: 80px;
     &-grid{
       flex-direction: row;
       gap: 78px;
