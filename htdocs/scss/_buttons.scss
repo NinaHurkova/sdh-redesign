@@ -9,6 +9,19 @@
   line-height: 24px;
   font-weight: 600;
   border-radius: $btnRadius;
+  &:focus{
+    box-shadow: none;
+  }
+  &--l{
+    padding: 18px 32px;
+    gap: 8px;
+    font-size: 18px;
+  }
+  &--m{
+    padding: 12px 24px;
+    gap: 8px;
+    font-size: 16px;
+  }
   &--s{
     padding: 6px 10px;
     font-size: 14px;
@@ -26,20 +39,75 @@
     color: $primaryGreen;
     border-color: $primaryGreen;
     background-color: $white;
+    &:hover{
+      background-color: $green;
+      border-color: $green;
+      color: $white;
+    }
+    &:focus{
+      background-color: $btnDarkGreen;
+      border-color: $btnDarkGreen;
+      color: $white;
+    }
+    &:disabled, &.disabled, &[disabled]{
+      color: $gray300;
+      border-color: $gray300;
+      pointer-events: none;
+    }
   }
   &.btn-main{
     background-color: $gray;
     border-color: $gray;
     color: $white;
+    &:hover{
+      background-color: $green;
+      border-color: $green;
+    }
+    &:focus{
+      background-color: $btnDarkGreen;
+      border-color: $btnDarkGreen;
+    }
+    &:disabled, &.disabled, &[disabled]{
+      background-color: $gray300;
+      border-color: $gray300;
+      pointer-events: none;
+    }
   }
   &.btn-main-outline{
     background-color: transparent;
     border-color: $gray;
     color: $gray;
+    &:hover{
+      background-color: $green;
+      border-color: $green;
+      color: $white;
+    }
+    &:focus{
+      background-color: $btnDarkGreen;
+      border-color: $btnDarkGreen;
+      color: $white;
+    }
+    &:disabled, &.disabled, &[disabled]{
+      color: $gray300;
+      border-color: $gray300;
+      pointer-events: none;
+    }
   }
   &.btn-white{
     background-color: $white;
     border-color: $white;
     color: $gray;
+    &:hover{
+      background-color: $gray100;
+      border-color: $gray100;
+    }
+    &:focus{
+      background-color: $gray200;
+      border-color: $gray200;
+    }
+    &:disabled, &.disabled, &[disabled]{
+      color: $gray300;
+      pointer-events: none;
+    }
   }
 }

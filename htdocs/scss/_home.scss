@@ -339,6 +339,12 @@
     border-radius: 50%;
     border: 1px solid currentColor;
     background: $white;
+    &:hover{
+      color: $green;
+    }
+    &:focus{
+      color: $btnDarkGreen;
+    }
     &.inactive{
       color: $gray400;
       pointer-events: none;
