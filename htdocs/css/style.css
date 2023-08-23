@@ -2,6 +2,14 @@
   font-size: 24px;
 }
 
+.title-s {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-variant: all-small-caps;
+}
+
 .bg-grayF4 {
   background-color: #F4F4F4;
 }
@@ -36,6 +44,14 @@
 
 .color-green {
   color: #7CB932;
+}
+
+.color-gray500 {
+  color: #697586;
+}
+
+.color-gray400 {
+  color: #9AA4B2;
 }
 
 .label--gray {
@@ -854,14 +870,6 @@ body {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-}
-.footer-title {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  color: #9AA4B2;
-  font-variant: all-small-caps;
-  margin-bottom: 12px;
 }
 .footer-social-grid {
   display: -webkit-box;
@@ -2448,14 +2456,6 @@ body {
   flex-direction: column;
   gap: 12px;
 }
-.p-profile-grid-item-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.44;
-  font-variant: all-small-caps;
-  color: #697586;
-}
 .p-profile-grid-item-text {
   margin: 0;
   font-size: 18px;
@@ -2763,14 +2763,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 50px;
-}
-.technologies-block-title {
-  margin-bottom: 12px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.4;
-  font-variant: all-small-caps;
-  color: #697586;
 }
 .technologies-block-text {
   margin-bottom: 0;
@@ -4455,6 +4447,9 @@ body {
   border-radius: 32px;
   border: 1px solid #CDD5DF;
 }
+.positions-list-item:hover {
+  border-color: #697586;
+}
 .positions-list-item .btn {
   width: 100%;
 }
@@ -4554,5 +4549,33 @@ body {
   }
   .positions-list-item-label {
     font-size: 16px;
+  }
+}
+
+.job-block-title {
+  margin-bottom: 40px;
+  font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #1A1A1F;
+}
+.job-block-list {
+  margin-bottom: 47px;
+  font-size: 22px;
+  color: #121926;
+}
+.job-block-list:last-child {
+  margin-bottom: 0;
+}
+.job-block-list li {
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .job-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }

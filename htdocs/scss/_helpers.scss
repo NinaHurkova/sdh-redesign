@@ -22,6 +22,8 @@ $gray700: #364152;
 $gray800: #202939;
 $gray900: #121926;
 
+$neutral90: #1A1A1F;
+
 $blue25: #F5F8FF;
 $grayF4: #F4F4F4;
 
@@ -42,6 +44,13 @@ $btnDarkGreen: #5E941E;
 
 .fs-24{
   font-size: 24px;
+}
+.title-s{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-variant: all-small-caps;
 }
 .bg-grayF4{
   background-color: $grayF4;
@@ -69,6 +78,12 @@ $btnDarkGreen: #5E941E;
 }
 .color-green{
   color: $green;
+}
+.color-gray500{
+  color: $gray500;
+}
+.color-gray400{
+  color: $gray400;
 }
 .label--gray{
   background-color: $gray100;

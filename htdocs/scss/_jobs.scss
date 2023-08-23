@@ -107,6 +107,9 @@
       background-color: $white;
       border-radius: $br-mobile-l;
       border: 1px solid $gray300;
+      &:hover{
+        border-color: $gray500;
+      }
       .btn{
         width: 100%;
       }
@@ -184,5 +187,30 @@
         }
       }
     }
+  }
+}
+.job-block{
+  &-title{
+    margin-bottom: 40px;
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: $neutral90;
+  }
+  &-list{
+    margin-bottom: 47px;
+    font-size: 22px;
+    color: $gray900;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    li{
+      margin: 20px 0;
+    }
+  }
+  @include for-tablet-up{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
   }
 }
