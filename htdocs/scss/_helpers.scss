@@ -42,8 +42,30 @@ $br-desktop-l: 40px;
 
 $btnDarkGreen: #5E941E;
 
+@mixin for-phone-up {
+  @media (min-width: 567px) { @content; }
+}
+@mixin for-tablet-up {
+  @media (min-width: 768px) { @content; }
+}
+@mixin for-desktop-small-up {
+  @media (min-width: 1120px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1366px) { @content; }
+}
+
 .fs-24{
   font-size: 24px;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
 }
 .title-s{
   margin: 0;
@@ -52,8 +74,37 @@ $btnDarkGreen: #5E941E;
   font-weight: 500;
   font-variant: all-small-caps;
 }
+.title-chapter{
+  margin-bottom: 40px;
+  font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 1.3;
+  color: $gray900;
+  @include for-desktop-small-up{
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+  &--m{
+    margin-bottom: 24px;
+    @include for-desktop-small-up{
+      margin-bottom: 32px;
+      font-size: 40px;
+    }
+  }
+}
+.text-r{
+  margin-bottom: 0;
+  font-size: 16px;
+  color: $gray700;
+  @include for-desktop-small-up{
+    font-size: 20px;
+  }
+}
 .bg-grayF4{
   background-color: $grayF4;
+}
+.bg-gray50{
+  background-color: $gray50;
 }
 .bg-blue25{
   background-color: $blue25;
@@ -79,6 +130,9 @@ $btnDarkGreen: #5E941E;
 .color-green{
   color: $green;
 }
+.color-gray900{
+  color: $gray900;
+}
 .color-gray500{
   color: $gray500;
 }
@@ -94,19 +148,30 @@ $btnDarkGreen: #5E941E;
   height: 100%;
   object-fit: cover;
 }
+.object-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .object-top{
   object-position: top;
 }
-
-@mixin for-phone-up {
-  @media (min-width: 567px) { @content; }
+.rounded-m{
+  border-radius: $br-mobile-m;
+  @include for-desktop-small-up{
+    border-radius: $br-desktop-m;
+  }
 }
-@mixin for-tablet-up {
-  @media (min-width: 768px) { @content; }
+.rounded-l{
+  border-radius: $br-mobile-l;
+  @include for-desktop-small-up{
+    border-radius: $br-desktop-l;
+  }
 }
-@mixin for-desktop-small-up {
-  @media (min-width: 1120px) { @content; }
+.border{
+  border-width: 1px;
+  border-style: solid;
 }
-@mixin for-desktop-up {
-  @media (min-width: 1366px) { @content; }
+.border-gray200{
+  border-color: $gray200;
 }

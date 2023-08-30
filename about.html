@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1">
+    <title>SDH: Partnership that works for you</title>
+
+    <link rel="stylesheet" href="htdocs/font/font.css">
+
+    <link rel="stylesheet" href="htdocs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="htdocs/css/select2.min.css">
+    <link rel="stylesheet" href="htdocs/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="htdocs/css/slick.css">
+    <link rel="stylesheet" href="htdocs/css/slick-theme.css">
+    <link rel="stylesheet" href="htdocs/css/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="htdocs/js/jquery-3.6.4.min.js"></script>
+    <script src="htdocs/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-theme">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./">
+                        <img src="htdocs/img/logo.svg" class="logo-img" alt="Software Development Hub">
+                    </a>
+                    <a href="#" class="btn btn--s btn-green-outline d-lg-none">Get in touch</a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#navbar"
+                            aria-controls="navbar">
+                        <i class="ph ph-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar" aria-labelledby="label">
+                        <div class="offcanvas-header pb-0">
+                            <h5 class="offcanvas-title invisible" id="label">Offcanvas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto mb-lg-0">
+                                <li>
+                                    <a class="nav-link active" aria-current="page"" href="./about.html">Company</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Projects
+                                        <i class="icon ph ph-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./project-view-ehr.html">Electronic Health Records</a></li>
+                                        <li><a class="dropdown-item" href="./project-view-terneo.html">Terneo</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./services-list.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./industries-list.html">Industries</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link href="./jobs-list.html">Jobs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./blog-list.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="navigation-buttons">
+                                <a href="#" class="btn btn--slim btn-main d-none d-lg-flex">Get in touch</a>
+                                <form action="">
+                                    <div class="select-lang d-none d-lg-block">
+                                        <select name="" id="" class="selectpicker" style="width: 105px;">
+                                            <option value="eng">Eng</option>
+                                            <option value="de">De</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-lg-none">
+                                        <div class="input-group-switch">
+                                            <div class="switch">
+                                                <input type="radio" id="eng" name="switch-eng" value="eng" checked/>
+                                                <label for="eng">Eng</label>
+                                            </div>
+                                            <div class="switch">
+                                                <input type="radio" id="de" name="switch-eng" value="de"/>
+                                                <label for="de">De</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <nav aria-label="breadcrumb">
+                <div class="container-xxl">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="\">Home</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item active" aria-current="page">About us</li>
+                    </ol>
+                </div>
+            </nav>
+            <section class="page-header text-center page-list">
+                <div class="container-xxl">
+                    <div class="page-header-block align-items-center page-header-block--about">
+                        <h1 class="page-title title-colored">About SDH</h1>
+                        <p class="page-subtitle">SDH is a community of software engineering teams from Ukraine, Germany, and the USA. Our mission is to be a reliable technical partner for product companies and startups to achieve their goals through IT outsourcing. Over 9M+ people use products we developed.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="container-xxl">
+                <div class="jobs-banner">
+                    <div class="jobs-banner-image">
+                        <img src="./htdocs/img/image-jobs.jpg" alt="" class="object-cover object-top">
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--sm">
+                    <div class="about-header">
+                        <p class="about-header-subtitle">We provide our clients with top software development services through well-consolidated cooperation.</p>
+                        <div class="about-tag-list">
+                            <span class="about-tag-list-item">Full process outsourcing</span>
+                            <span class="about-tag-list-item">Managed projects</span>
+                            <span class="about-tag-list-item">Dedicated team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--xs">
+                    <div class="achievements-grid achievements-grid--paddings bg-gray50 rounded-l">
+                        <ul class="achievements-list">
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/appfutura-color.png" alt="">
+                            </li>
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/goodfirms-color.png" alt="">
+                            </li>
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/topdevelopers-ua-color.png" alt="">
+                            </li>
+                        </ul>
+                        <ul class="achievements-list">
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/manifest-top-100-color.png" alt="">
+                            </li>
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/clutch-color.png" alt="">
+                            </li>
+                            <li class="achievements-list-item">
+                                <img src="htdocs/img/home/achievements/designrush-color.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--sm">
+                    <div class="about-leadership">
+                        <div class="about-leadership-header">
+                            <h3 class="title-chapter--m fw-700">Leadership team</h3>
+                            <p class="text-r">Meanwhile, there are 100+ bright minds with a can-do attitude behind them.</p>
+                        </div>
+                        <div class="about-leadership-image-grid">
+                            <div class="about-leadership-image">
+                                <img src="./htdocs/img/image-jobs.jpg" alt="" class="object-cover object-top">
+                            </div>
+                            <div class="about-leadership-image">
+                                <img src="./htdocs/img/image-jobs.jpg" alt="" class="object-cover object-top">
+                            </div>
+                            <div class="about-leadership-image">
+                                <img src="./htdocs/img/image-jobs.jpg" alt="" class="object-cover object-top">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--xs">
+                    <div class="about-numbers bg-gray50 rounded-l">
+                        <div class="about-numbers-block">
+                            <span class="about-numbers-number">100+</span>
+                            <span class="about-numbers-title">Team members</span>
+                        </div>
+                        <div class="about-numbers-block">
+                            <span class="about-numbers-number">85+</span>
+                            <span class="about-numbers-title">Happy clients</span>
+                        </div>
+                        <div class="about-numbers-block">
+                            <span class="about-numbers-number">19+</span>
+                            <span class="about-numbers-title">Years of experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--s">
+                    <h3 class="title-chapter fw-700">Our approach</h3>
+                    <div class="about-cards-grid">
+                        <div class="about-card rounded-m border border-gray200">
+                            <span class="about-card-icon">
+                                <i class="ph ph-chart-polar"></i>
+                            </span>
+                            <h4 class="about-card-title">Agile + Waterfall</h4>
+                            <div class="about-card-body">
+                                <div class="list-check">
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>SDLC is fully covered</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Two-weeks sprints</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Weekly or daily meetings</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200">
+                            <span class="about-card-icon">
+                                <i class="ph ph-users-four"></i>
+                            </span>
+                            <h4 class="about-card-title">Direct contractor</h4>
+                            <div class="about-card-body">
+                                <div class="list-check">
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>No freelancers or subcontractors</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Team as service</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Transparent processes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200">
+                            <span class="about-card-icon">
+                                <i class="ph ph-handshake"></i>
+                            </span>
+                            <h4 class="about-card-title">Pricing options</h4>
+                            <div class="about-card-body">
+                                <div class="list-check">
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Time & Materials</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Fixed Price</span>
+                                    </div>
+                                    <div class="list-check-item">
+                                        <i class="ph ph-check-circle color-green"></i>
+                                        <span>Flex Scope</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--s">
+                    <div class="about-projects bg-gray50 rounded-l">
+                        <div class="about-projects-header">
+                            <h3 class="title-chapter--m fw-700">Projects</h3>
+                            <p class="text-r">The solutions we create have a positive impact and change the world for the better. They are recognized as best-in-class and have earned the spotlight of the top media.</p>
+                            <a href="#" class="btn btn--slim btn-main-outline">Discover<i class="ph ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="about-projects-image-grid">
+                            <div class="about-projects-image">
+                                <img src="./htdocs/img/logo-forbes.png" alt="">
+                            </div>
+                            <div class="about-projects-image">
+                                <img src="./htdocs/img/logo-crunchbase.png" alt="">
+                            </div>
+                            <div class="about-projects-image">
+                                <img src="./htdocs/img/logo-fortune.png" alt="">
+                            </div>
+                            <div class="about-projects-image">
+                                <img src="./htdocs/img/logo-inc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--s">
+                    <h3 class="title-chapter fw-700">Acting for Sustainability</h3>
+                    <div class="about-cards-grid">
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">Safe and healthy workplace</h4>
+                            <div class="about-card-body">
+                                <p>SDH employees’ inalienable right – to work in a safe and healthy environment – is being exercised through remote-first offices, and ongoing mental health support.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">Diversity team</h4>
+                            <div class="about-card-body">
+                                <p>We cherish diversity, treating it as a key value. Diverse teams overperform and provide a multidimensional approach. SDH is close to achieving a 50/50 gender balance and has 50% female at C-level staff.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">Volunteering</h4>
+                            <div class="about-card-body">
+                                <p>Our employees make solid efforts when volunteering for various social incentives. We eagerly help IDPs, animal shelters, social care organizations, military hospitals, and those in need.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">Planting greenery</h4>
+                            <div class="about-card-body">
+                                <p>We commit annually to greenery planting projects to alleviate the negative impact of worldwide air pollution.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">NGOs support</h4>
+                            <div class="about-card-body">
+                                <p>We team up with Hostline Charity and various NGOs to contribute what we can promote education accessibility, humanitarian aid, fight poverty, and overall social good.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-m border border-gray200 about-card--hover">
+                            <h4 class="about-card-title">Education</h4>
+                            <div class="about-card-body">
+                                <p>We continually train our employees and strive to increase the number of youth and adults with technical skills for employment, decent jobs, and entrepreneurship.</p>
+                                <button class="btn btn--slim btn-main-outline">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--sm">
+                    <h3 class="title-chapter fw-700">The journey we have been making</h3>
+                    <div class="divided-list">
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2004</h4>
+                            <p class="divided-list-text">SDH CEO and CTO met well ahead of company's establishment. Vic and Pavel were working in the same company in the early days of their careers. Both shifted to a Ukrainian software development company and focused on building custom ERP and CRM software solutions.</p>
+                        </div>
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2014</h4>
+                            <p class="divided-list-text">Together they founded a privately held company that provided web application development services. ServiceKit became the first loyal client and partner. In the same year, mobile developers joined the team to develop native mobile apps.</p>
+                        </div>
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2017</h4>
+                            <p class="divided-list-text">A new pioneer direction loomed on the horizon. Partnering with Medstar, SDH started its work on Digital Health domain. We augmented our crew with Software Testing engineers, and the whole team moved to a new roomy office.</p>
+                        </div>
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2019</h4>
+                            <p class="divided-list-text">SDH has got 7 loyal clients worldwide. Software products we have been working on are used by more than 9M+ users. The team has increased 7-fold since the founding of the company. The novice direction we focus on today is AI & Machine Learning to make a drastic change in the healthcare industry.</p>
+                        </div>
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2020</h4>
+                            <p class="divided-list-text">Since 2020, we were one of the first IT companies switching to remote work without loss of productivity. The number of the team has doubled and reached a record number in the SDH history. COVID-19 served as a stimulus to deepen expertise in health tech, education, and logistics.</p>
+                        </div>
+                        <div class="divided-list-item">
+                            <h4 class="divided-list-title">2022</h4>
+                            <p class="divided-list-text">Our native city Kharkiv was attacked by Russian troops, forcing us to flee to safety. The invasion led us to disperse to over 20+ cities and countries, but it also presented an opportunity to expand our global presence. Outsourcing work to SDH directly impacts our lives and our families' well-being. Check out our current status
+                                <a href="#" class="link-green">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="section-page section-page--sm">
+                    <div class="industries-inner-grid">
+                        <div class="industries-inner-item-left">
+                            <h3 class="industries-inner-title">Industries we serve</h3>
+                            <p class="industries-inner-subtitle">We guide businesses to the industry's top accepting the competition challenges.</p>
+                        </div>
+                        <div class="industries-inner-item-right">
+                            <div class="industries-inner-item">Logistics</div>
+                            <div class="industries-inner-item">Education</div>
+                            <div class="industries-inner-item">Accounting</div>
+                            <div class="industries-inner-item">Entertainment</div>
+                            <div class="industries-inner-item">E-commerce</div>
+                            <div class="industries-inner-item">Travel</div>
+                            <div class="industries-inner-item">Healthcare</div>
+                            <div class="industries-inner-item">Security</div>
+                            <div class="industries-inner-item">Field Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="footer-top-grid">
+                        <div class="footer-name">
+                            <a href="\" class="footer-logo">
+                                <img src="htdocs/img/logo.svg" alt="">
+                            </a>
+                            <p class="footer-moto">
+                                SDH is a team of experts in custom software, web & mobile app development for partners worldwide.
+                                We help product teams & startups achieve their goals through IT outsourcing.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="footer-nav">
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Company</a>
+                                    </li>
+                                    <li>
+                                        <a href="./project-view.html" class="footer-nav-link">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="./services-list.html" class="footer-nav-link">Services</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="./industries-list.html" class="footer-nav-link">Industries</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-list.html" class="footer-nav-link">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-block">
+                                    <h5 class="title-s color-gray400 mb-2">Offices</h5>
+                                    <p class="footer-contact-line">61057, Pushkinska Street 32, <span class="d-block d-xxl-inline">Kharkiv, Ukraine</span></p>
+                                    <p class="footer-contact-line">20537, Anckelmannspaltz 1, <span class="d-block d-xxl-inline">Hamburg, Germany</span></p>
+                                </div>
+                                <div class="footer-contact-block">
+                                    <h5 class="title-s color-gray400 mb-2">Contact</h5>
+                                    <p class="footer-contact-line">+490 402 360 8920</p>
+                                    <p class="footer-contact-line">info@sdh-it.com</p>
+                                </div>
+                            </div>
+                            <div class="footer-social">
+                                <h5 class="title-s color-gray400 mb-2">Social</h5>
+                                <div class="footer-social-grid">
+                                    <a href="#" class="social-link"><i class="ph-fill ph-twitter-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-linkedin-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-facebook-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-bold ph-instagram-logo"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="footer-bottom-grid">
+                        <div class="copyright">&copy; Software Development Hub 2014-2023. All Rights Reserved</div>
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-bottom-links-item">Privacy Policy</a>
+                            <a href="#" class="footer-bottom-links-item">Data protection</a>
+                            <a href="#" class="footer-bottom-links-item">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="htdocs/js/select2.full.min.js"></script>
+    <script src="htdocs/js/custom.js"></script>
+
+    <!--Extra js-->
+    <script type="text/javascript">
+        function titleHeight(){
+            $('.about-card--hover').each(function () {
+                const title = $(this).find('.about-card-title');
+                const cardHeight = $(this).height() - $(title).height();
+                const style = {
+                    "transform": "translateY(" + cardHeight + "px)"
+                };
+                title.css(style);
+                console.log(style);
+            });
+        }
+        titleHeight();
+        $(window).on("resize", titleHeight);
+    </script>
+</body>
+</html>

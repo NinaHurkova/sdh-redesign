@@ -342,61 +342,7 @@
     }
   }
 }
-.solutions{
-  &-title{
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
-    color: $gray900;
-  }
-  &-list{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    &-item{
-      padding-top: 32px;
-      border-top: 1px solid $gray200;
-    }
-    &-title{
-      margin-bottom: 16px;
-      font-weight: 500;
-      font-size: 22px;
-      line-height: 1.45;
-      color: $gray900;
-    }
-    &-text{
-      margin-bottom: 0;
-      font-size: 16px;
-      line-height: 1.5;
-      color: $gray600;
-    }
-  }
-  @include for-desktop-small-up{
-    &-title{
-      margin-bottom: 60px;
-      font-size: 60px;
-    }
-    &-list{
-      margin-left: auto;
-      max-width: 890px;
-      gap: 80px;
-      &-item{
-        display: flex;
-        justify-content: space-between;
-        gap: 110px;
-      }
-      &-title{
-        flex-shrink: 0;
-        font-size: 24px;
-        width: 14em;
-      }
-      &-text{
-        font-size: 20px;
-      }
-    }
-  }
-}
+
 .extra-services{
   &-block{
     padding: 24px 4px;

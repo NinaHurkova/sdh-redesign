@@ -1,0 +1,224 @@
+.about-header{
+  &-subtitle{
+    margin-bottom: 30px;
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: $gray900;
+    @include for-desktop-small-up{
+      font-size: 40px;
+      max-width: 771px;
+    }
+  }
+}
+.about-tag-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  &-item{
+    flex-shrink: 0;
+    display: inline-block;
+    font-size: 16px;
+    color: $gray700;
+    border-radius: 12px;
+    background-color: $gray100;
+    padding: 8px 15px;
+  }
+  @include for-tablet-up{
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-item{
+      font-size: 22px;
+    }
+  }
+}
+.about-leadership{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+  &-image{
+    overflow: hidden;
+    border-radius: $br-mobile-m;
+    &:nth-child(2){
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 2;
+    }
+    &-grid{
+      display: grid;
+      grid-template-columns: 135px 1fr;
+      grid-template-rows: 135px 135px;
+      column-gap: 18px;
+      row-gap: 20px;
+    }
+  }
+  @include for-desktop-small-up{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &-header{
+      max-width: 390px;
+    }
+    &-image{
+      border-radius: $br-desktop-m;
+      &:nth-child(2){
+        max-width: 306px;
+      }
+      &-grid{
+        grid-template-columns: 225px 1fr;
+        grid-template-rows: 222px 222px;
+        gap: 32px;
+      }
+    }
+  }
+}
+.about-numbers{
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  &-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &-number{
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: $gray900;
+  }
+  &-title{
+    font-size: 16px;
+    color: $gray500;
+  }
+  @include for-desktop-small-up{
+    padding: 80px;
+    &-block{
+      gap: 32px;
+    }
+    &-number{
+      font-size: 64px;
+    }
+    &-title{
+      font-size: 24px;
+    }
+  }
+}
+.about-cards-grid{
+  display: grid;
+  gap: 32px;
+  @include for-desktop-small-up{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.about-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+  &-body{
+    flex-grow: 1;
+    color: $gray700;
+    .btn{
+      margin-top: 40px;
+    }
+  }
+  &-icon{
+    font-size: 32px;
+    color: $gray500;
+    display: inline-flex;
+    border-radius: 12px;
+    background-color: $gray50;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+  }
+  &-title{
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: $gray900;
+  }
+  @include for-desktop-small-up{
+    padding: 50px;
+    gap: 40px;
+  }
+  &--hover{
+    position: relative;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      border-radius: $br-mobile-m;
+      background-color: $greenLight;
+      transition: bottom 0.3s;
+      @include for-desktop-small-up{
+        border-radius: $br-desktop-m;
+      }
+    }
+    .about-card-title{
+      position: relative;
+      transform: translateY(100px);
+      transition: transform 0.3s;
+    }
+    &:hover{
+      &:before{
+        bottom: 100%;
+      }
+      .about-card-title{
+        transform: translateY(0) !important;
+      }
+    }
+  }
+}
+.about-projects{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 26px;
+  gap: 40px;
+  &-header{
+    max-width: 395px;
+    .btn{
+      margin-top: 32px;
+    }
+  }
+  &-image{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 125px;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: $white;
+    img{
+      max-width: 100%;
+    }
+    &-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+  }
+  @include for-desktop-small-up{
+    padding: 80px 113px;
+    &-image{
+      width: 225px;
+      height: 222px;
+      padding: 33px;
+      border-radius: 32px;
+    }
+  }
+}
