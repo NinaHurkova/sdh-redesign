@@ -132,8 +132,10 @@
             </div>
             <div class="container-xxl">
                 <div class="section-page section-page--sm">
-                    <div class="job-block">
-                        <h3 class="job-block-title">Requirements</h3>
+                    <div class="job-block sticky-block">
+                        <h3 class="job-block-title ">
+                            <span class="sticky-title">Requirements</span>
+                        </h3>
                         <div class="job-block-description">
                             <p class="title-s color-gray500">base</p>
                             <ul class="job-block-list">
@@ -311,5 +313,36 @@
     <!--Extra js-->
     <script src="htdocs/js/telInput/intlTelInput.js"></script>
     <script src="htdocs/js/form.js"></script>
+    <script type="text/javascript">
+        function stickyTitleBlock() {
+
+            const stickyBlock = $('.sticky-block');
+            const stickyTitle = $(stickyBlock).find('.sticky-title');
+            const stickyTop = $(stickyTitle).offset().top;
+            const blockHeight = $(stickyBlock).height();
+            const stickyStop = $(stickyBlock).offset().top + blockHeight;
+            const headerHeight = $('header').height() + 10;
+            
+            $(window).scroll(function() {
+                let windowTop = $(window).scrollTop();
+                if (stickyTop < windowTop && stickyStop - $(stickyTitle).height() > windowTop && window.matchMedia( "(min-width: 768px)" ).matches) {
+                    $(stickyTitle).css({
+                        'position': 'fixed',
+                        'top': headerHeight
+                    });
+                } else {
+                    $(stickyTitle).css({
+                        'position': 'relative',
+                        'top': 'auto'
+                    });
+                }
+            })
+
+        }
+
+        stickyTitleBlock();
+
+        $(window).on("resize", stickyTitleBlock);
+    </script>
 </body>
 </html>
