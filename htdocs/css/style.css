@@ -3130,6 +3130,20 @@ body {
   display: flex;
   gap: 50px;
 }
+.product-screen--v-m {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .product-screen--v-m {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 
 .hero-lms-grid {
   display: grid;

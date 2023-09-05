@@ -496,6 +496,12 @@
 .product-screen {
   display: flex;
   gap: 50px;
+  &--v-m{
+    flex-direction: column;
+    @include for-tablet-up{
+      flex-direction: row;
+    }
+  }
 }
 
 .hero-lms-grid {
