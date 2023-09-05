@@ -207,6 +207,9 @@ body{
   @include for-desktop-small-up{
     font-size: 18px;
   }
+  &--s{
+    max-width: 491px;
+  }
 }
 .nav-tabs{
   padding: 6px;

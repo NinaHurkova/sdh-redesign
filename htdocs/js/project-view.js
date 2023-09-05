@@ -23,4 +23,4 @@ $(document).ready(function() {
     initFeaturesSlider();
 });
 
-$(window).on("resize", initFeaturesSlider, false);
+$(window).on("resize", initFeaturesSlider);
