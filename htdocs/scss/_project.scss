@@ -502,6 +502,12 @@
       flex-direction: row;
     }
   }
+  &--v-r-m{
+    flex-direction: column-reverse;
+    @include for-tablet-up{
+      flex-direction: row;
+    }
+  }
 }
 
 .hero-lms-grid {

@@ -3144,6 +3144,20 @@ body {
     flex-direction: row;
   }
 }
+.product-screen--v-r-m {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .product-screen--v-r-m {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 
 .hero-lms-grid {
   display: grid;
