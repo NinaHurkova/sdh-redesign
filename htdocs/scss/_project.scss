@@ -89,9 +89,9 @@
   color: #2970FF;
 }
 .results{
-  &-header{
-    margin-bottom: 41px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
   &-title{
     max-width: 290px;
     margin: 0;
@@ -123,10 +123,16 @@
     line-height: 2;
     color: $gray500;
   }
-  @include for-desktop-small-up{
-    &-header{
-      margin-bottom: 126px;
+  &-legend{
+    display: flex;
+    justify-content: flex-end;
+    &-text{
+      font-size: 16px;
+      color: $gray900;
     }
+  }
+  @include for-desktop-small-up{
+    gap: 126px;
     &-title{
       max-width: 600px;
       font-size: 42px;
@@ -147,6 +153,12 @@
     &-text{
       font-size: 20px;
       line-height: 1.6;
+    }
+    &-legend{
+      &-text{
+        max-width: 740px;
+        font-size: 22px;
+      }
     }
   }
 }

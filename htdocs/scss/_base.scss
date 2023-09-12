@@ -372,3 +372,38 @@ body{
     color: $gray700;
   }
 }
+
+.three-cards-grid{
+  display: grid;
+  gap: 32px;
+  @include for-desktop-small-up{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.scroll-row{
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  @media(min-width: 992px){
+    flex-wrap: nowrap;
+    gap: 24px;
+    transform: translateX(var(--x,0%));
+    will-change: transform;
+    transform-style: preserve-3d;
+    &.left{
+      justify-content: flex-start;
+    }
+    &.right{
+      margin-top: 53px;
+      justify-content: flex-end;
+    }
+    &-wrapper{
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 991px) {
+    .clone{
+      display: none !important;
+    }
+  }
+}

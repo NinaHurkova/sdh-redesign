@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
     // Animated title
     let textContainer = $('.title-animated-container h1');
@@ -73,24 +74,9 @@ $(document).ready(function() {
         }
     });
 
-    // Horizontal scroll for technologies
-    let h =$('.technology-row');
-
-    $(window).scroll(function() {
-        h.each(function () {
-            let offset = this.getBoundingClientRect();
-            let top = offset.top;
 
 
-            if(top < window.innerHeight && top >=0) {
-                if($(this).hasClass('left')){
-                    $(this).css('--x',(top - window.innerHeight)*(100/window.innerHeight)+'%');
-                }else{
-                    $(this).css('--x',(top - window.innerHeight)*(100/window.innerHeight)*(-1)+'%');
-                }
-            }
-        })
-    });
+
 
     const myCollapsible = $('.accordion-collapse');
     myCollapsible.each(function () {

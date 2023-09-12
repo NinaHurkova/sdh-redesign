@@ -108,13 +108,6 @@
     }
   }
 }
-.about-cards-grid{
-  display: grid;
-  gap: 32px;
-  @include for-desktop-small-up{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 .about-card{
   display: flex;
   flex-direction: column;
