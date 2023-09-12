@@ -4157,6 +4157,117 @@ body {
   }
 }
 
+.offer-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 20px;
+}
+.offer-card-header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.offer-card-title {
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  color: #202939;
+}
+.offer-card-body {
+  text-align: center;
+  font-size: 16px;
+  color: #364152;
+}
+.offer-card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media (min-width: 1120px) {
+  .offer-card-title {
+    font-size: 24px;
+  }
+}
+
+.process-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 32px;
+  counter-reset: item;
+}
+.process-line-item {
+  font-size: 22px;
+  font-weight: 500;
+  color: #202939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+.process-line-item:before {
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+  font-size: 20px;
+  font-weight: 400;
+  color: #7CB932;
+}
+@media (min-width: 1120px) {
+  .process {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .process-header {
+    width: 450px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .process-line-wrapper {
+    margin-top: 150px;
+  }
+  .process-title {
+    position: sticky;
+    top: 120px;
+  }
+  .process-line {
+    gap: 80px;
+  }
+  .process-line-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  }
+  .process-line-item:before {
+    line-height: 3;
+  }
+}
+
 .blog-list-title {
   font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
   font-weight: 600;

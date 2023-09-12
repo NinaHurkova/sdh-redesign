@@ -750,3 +750,86 @@
     }
   }
 }
+.offer-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 20px;
+  &-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  &-title {
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    color: $gray800;
+  }
+  &-body {
+    text-align: center;
+    font-size: 16px;
+    color: $gray700;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  @include for-desktop-small-up{
+    &-title{
+      font-size: 24px;
+    }
+  }
+}
+.process{
+  &-line{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    counter-reset: item;
+    &-item{
+      font-size: 22px;
+      font-weight: 500;
+      color: $gray800;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &:before{
+        counter-increment: item;
+        content: counter(item, decimal-leading-zero);
+        font-size: 20px;
+        font-weight: 400;
+        color: $green;
+      }
+    }
+  }
+  @include for-desktop-small-up{
+    display: flex;
+    &-header{
+      width: 450px;
+      flex-shrink: 0;
+    }
+    &-line-wrapper{
+      margin-top: 150px;
+    }
+    &-title{
+      position: sticky;
+      top: 120px;
+    }
+    &-line{
+      gap: 80px;
+      &-item{
+        flex-direction: row;
+        gap: 40px;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+        &:before{
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
