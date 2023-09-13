@@ -5350,3 +5350,47 @@ body {
     border-radius: 32px;
   }
 }
+
+.contact-map {
+  margin: 24px 0;
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/map-placeholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .contact-map {
+    height: 450px;
+  }
+}
+
+.contact-list-item {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid #5E941E;
+}
+.contact-list-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+  color: #202939;
+}
+.contact-list-address {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #364152;
+}
+@media (min-width: 1120px) {
+  .contact-list {
+    padding-top: 50px;
+  }
+  .contact-list-item {
+    max-width: 1096px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

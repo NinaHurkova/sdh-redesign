@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1">
+    <title>SDH: Partnership that works for you</title>
+
+    <link rel="stylesheet" href="htdocs/font/font.css">
+
+    <link rel="stylesheet" href="htdocs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="htdocs/css/select2.min.css">
+    <link rel="stylesheet" href="htdocs/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="htdocs/css/slick.css">
+    <link rel="stylesheet" href="htdocs/css/slick-theme.css">
+    <link rel="stylesheet" href="htdocs/css/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="htdocs/js/jquery-3.6.4.min.js"></script>
+    <script src="htdocs/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-theme">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./">
+                        <img src="htdocs/img/logo.svg" class="logo-img" alt="Software Development Hub">
+                    </a>
+                    <a href="#" class="btn btn--s btn-green-outline d-lg-none">Get in touch</a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#navbar"
+                            aria-controls="navbar">
+                        <i class="ph ph-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar" aria-labelledby="label">
+                        <div class="offcanvas-header pb-0">
+                            <h5 class="offcanvas-title invisible" id="label">Offcanvas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto mb-lg-0">
+                                <li>
+                                    <a class="nav-link" href="./about.html">Company</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./projects-list.html">Projects</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./services-list.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./industries-list.html">Industries</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./jobs-list.html">Jobs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./blog-list.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="navigation-buttons">
+                                <a href="#" class="btn btn--slim btn-main d-none d-lg-flex">Get in touch</a>
+                                <form action="">
+                                    <div class="select-lang d-none d-lg-block">
+                                        <select name="" id="" class="selectpicker" style="width: 105px;">
+                                            <option value="eng">Eng</option>
+                                            <option value="de">De</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-lg-none">
+                                        <div class="input-group-switch">
+                                            <div class="switch">
+                                                <input type="radio" id="eng" name="switch-eng" value="eng" checked/>
+                                                <label for="eng">Eng</label>
+                                            </div>
+                                            <div class="switch">
+                                                <input type="radio" id="de" name="switch-eng" value="de"/>
+                                                <label for="de">De</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <nav aria-label="breadcrumb">
+                <div class="container-xxl">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="\">Home</a>
+                        </li>
+                        <i class="ph ph-caret-right icon"></i>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </div>
+            </nav>
+            <div class="section-page section-page--sm">
+                <div class="container-xxl">
+                    <section class="page-header-block align-items-center text-center page-header-block--gap page-header-block--m">
+                        <h1 class="blog-list-title title-colored">Contact</h1>
+                        <p class="page-subtitle">SDH is a group of engineers and designers providing first-class outsourcing software development services. With 100+ motivated specialists worldwide, we act as a trusted technical partner for startups and product teams in the USA, Europe, and MENA.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="nav-tabs-holder text-center">
+                    <ul class="nav nav-tabs" id="blogsTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active"
+                                    id="all-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#all"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="all"
+                                    aria-selected="true">
+                                USA
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="business-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#business"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="business"
+                                    aria-selected="false">
+                                Germany
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="consulting-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#consulting"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="consulting"
+                                    aria-selected="false">
+                                Ukraine
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="marketing-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#marketing"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="marketing"
+                                    aria-selected="false">
+                                Slovakia
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-map"></div>
+            <div class="container-xxl">
+                <div class="contact-list">
+                    <div class="contact-list-item">
+                        <h4 class="contact-list-title">USA</h4>
+                        <p class="contact-list-address">
+                            SDH IT Inc <br>
+                            2093 Philadelphia Pike #7220 <br>
+                            Claymont DE <br>
+                            19703 <br>
+                            <a href="mailto:info@sdh-it.com" class="color-inherit">info@sdh-it.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-list-item">
+                        <h4 class="contact-list-title">Germany</h4>
+                        <p class="contact-list-address">
+                            SDH IT GmbH <br>
+                            Anckelmannspaltz 1, <br>
+                            Hamburg, Germany <br>
+                            20537 <br>
+                            <a href="mailto:info@sdh-it.com" class="color-inherit">info@sdh-it.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-list-item">
+                        <h4 class="contact-list-title">Ukraine</h4>
+                        <p class="contact-list-address">
+                            Software Development Hub <br>
+                            Pushkinska Street 32 <br>
+                            Kharkiv, Ukraine <br>
+                            61057 <br>
+                            <a href="mailto:info@sdh.com.ua">info@sdh.com.ua</a>
+                        </p>
+                    </div>
+                    <div class="contact-list-item">
+                        <h4 class="contact-list-title">Slovakia</h4>
+                        <p class="contact-list-address">
+                            SDH Slo <br>
+                            Kolárska 8, 811 06 <br>
+                            Bratislava, Slovakia
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section class="section-main estimate section-fw">
+                <div class="estimate-wrapper section-fw-inner-gray">
+                    <div class="container-xxl">
+                        <div class="estimate-grid">
+                            <header class="estimate-title">
+                                <h2 class="title-main title-colored">Need a project estimate?</h2>
+                                <p class="subtitle-main subtitle-main--l">Drop us a line, and we provide you with a qualified consultation.</p>
+                            </header>
+                            <div class="estimate-form">
+                                <form action="">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                        <label for="name" class="form-label form-label--required">Full Name</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <!--<label for="phone" class="form-label form-label&#45;&#45;phone">Phone</label>-->
+                                        <input type="tel" id="phone" placeholder="Phone">
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <label for="email" class="form-label form-label--required">Email</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-file-container">
+                                            <input class="input-file" id="file" type="file">
+                                            <label tabindex="0" for="file" class="input-file-label">Attach file</label>
+                                        </div>
+                                        <p class="file-return"></p>
+                                    </div>
+                                    <button type="submit" class="btn btn-green w-100">Send<i class="ph ph-arrow-up-right"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="footer-top-grid">
+                        <div class="footer-name">
+                            <a href="\" class="footer-logo">
+                                <img src="htdocs/img/logo.svg" alt="">
+                            </a>
+                            <p class="footer-moto">
+                                SDH is a team of experts in custom software, web & mobile app development for partners worldwide.
+                                We help product teams & startups achieve their goals through IT outsourcing.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="footer-nav">
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="#" class="footer-nav-link">Company</a>
+                                    </li>
+                                    <li>
+                                        <a href="./projects-list.html" class="footer-nav-link">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="./services-list.html" class="footer-nav-link">Services</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        <a href="./industries-list.html" class="footer-nav-link">Industries</a>
+                                    </li>
+                                    <li>
+                                        <a href="./jobs-list.html" class="footer-nav-link">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-list.html" class="footer-nav-link">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-block">
+                                    <h5 class="title-s color-gray400 mb-2">Offices</h5>
+                                    <p class="footer-contact-line">61057, Pushkinska Street 32, <span class="d-block d-xxl-inline">Kharkiv, Ukraine</span></p>
+                                    <p class="footer-contact-line">20537, Anckelmannspaltz 1, <span class="d-block d-xxl-inline">Hamburg, Germany</span></p>
+                                </div>
+                                <div class="footer-contact-block">
+                                    <h5 class="title-s color-gray400 mb-2">Contact</h5>
+                                    <p class="footer-contact-line">+490 402 360 8920</p>
+                                    <p class="footer-contact-line">info@sdh-it.com</p>
+                                </div>
+                            </div>
+                            <div class="footer-social">
+                                <h5 class="title-s color-gray400 mb-2">Social</h5>
+                                <div class="footer-social-grid">
+                                    <a href="#" class="social-link"><i class="ph-fill ph-twitter-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-linkedin-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-fill ph-facebook-logo"></i></a>
+                                    <a href="#" class="social-link"><i class="ph-bold ph-instagram-logo"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="footer-bottom-grid">
+                        <div class="copyright">&copy; Software Development Hub 2014-2023. All Rights Reserved</div>
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-bottom-links-item">Privacy Policy</a>
+                            <a href="#" class="footer-bottom-links-item">Data protection</a>
+                            <a href="#" class="footer-bottom-links-item">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="htdocs/js/select2.full.min.js"></script>
+    <script src="htdocs/js/custom.js"></script>
+
+    <!--Extra js-->
+    <script src="htdocs/js/telInput/intlTelInput.js"></script>
+    <script src="htdocs/js/form.js"></script>
+</body>
+</html>

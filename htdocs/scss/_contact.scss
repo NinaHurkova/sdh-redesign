@@ -1,0 +1,40 @@
+.contact-map{
+  margin: 24px 0;
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/map-placeholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include for-tablet-up{
+    height: 450px;
+  }
+}
+.contact-list{
+  &-item{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-top: 1px solid $btnDarkGreen;
+  }
+  &-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Jakarta, WorkSans, Arial, Helvetica, sans-serif;
+    color: $gray800;
+  }
+  &-address{
+    margin-bottom: 0;
+    font-size: 18px;
+    color: $gray700;
+  }
+  @include for-desktop-small-up{
+    padding-top: 50px;
+    &-item{
+      max-width: 1096px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
