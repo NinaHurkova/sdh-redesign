@@ -46,7 +46,7 @@
                                     <a class="nav-link" href="./about.html">Company</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link" href="./projects-list.html">Projects</a>
+                                    <a class="nav-link active" aria-current="page" href="./projects-list.html">Projects</a>
                                 </li>
                                 <li>
                                     <a class="nav-link" href="./services-list.html">Services</a>
@@ -58,7 +58,7 @@
                                     <a class="nav-link" href="./jobs-list.html">Jobs</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link active" aria-current="page" href="./blog-list.html">Blog</a>
+                                    <a class="nav-link" href="./blog-list.html">Blog</a>
                                 </li>
                             </ul>
                             <div class="navigation-buttons">
@@ -98,18 +98,21 @@
                             <a href="\">Home</a>
                         </li>
                         <i class="ph ph-caret-right icon"></i>
-                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                        <li class="breadcrumb-item active" aria-current="page">Projects</li>
                     </ol>
                 </div>
             </nav>
-            <div class="container-xxl">
-                <section class="section-page section-page--sm">
-                    <h1 class="blog-list-title title-colored">Blog on Software Development</h1>
-                </section>
+            <div class="section-page section-page--sm">
+                <div class="container-xxl">
+                    <section class="page-header-block align-items-center text-center page-header-block--gap page-header-block--m">
+                        <h1 class="blog-list-title title-colored">Discover our works</h1>
+                        <p class="page-subtitle">Here we try to break down the process of going from concepts to solutions – how SDH develops custom web and mobile apps, scalable MVPs, rich-featured products, and cloud systems that impact the tech and business world.</p>
+                    </section>
+                </div>
             </div>
             <div class="container-xxl">
-                <section class="blog-list">
-                    <div class="nav-tabs-holder">
+                <section class="projects-list">
+                    <div class="nav-tabs-holder text-center">
                         <ul class="nav nav-tabs" id="blogsTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active"
@@ -132,7 +135,7 @@
                                         role="tab"
                                         aria-controls="business"
                                         aria-selected="false">
-                                    Business
+                                    Digital Health
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -144,7 +147,7 @@
                                         role="tab"
                                         aria-controls="consulting"
                                         aria-selected="false">
-                                    IT Consulting
+                                    IoT & IIoT
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -156,7 +159,7 @@
                                         role="tab"
                                         aria-controls="marketing"
                                         aria-selected="false">
-                                    Marketing
+                                    E-commerce
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -168,7 +171,7 @@
                                         role="tab"
                                         aria-controls="mobile"
                                         aria-selected="false">
-                                    Mobile
+                                    Enterprise
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -180,7 +183,7 @@
                                         role="tab"
                                         aria-controls="life"
                                         aria-selected="false">
-                                    SDH Life
+                                    Startups
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -192,7 +195,7 @@
                                         role="tab"
                                         aria-controls="development"
                                         aria-selected="false">
-                                    Development
+                                    Travel & GIS
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -204,103 +207,77 @@
                                         role="tab"
                                         aria-controls="design"
                                         aria-selected="false">
-                                    Design
+                                    Education
                                 </button>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                            <div class="blog-list-grid">
-                                <div class="blog-list-grid-item">
-                                    <a href="./blog-view.html" class="blog-card">
-                                        <div class="blog-card-image">
-                                            <img src="./htdocs/img/blog-empty.png" alt="">
-                                        </div>
-                                        <div class="blog-card-meta">
-                                            <span>May 26, 2023</span>
-                                            <span><i class="ph ph-clock"></i> 11 min read</span>
-                                            <span><i class="ph ph-eye"></i> 44</span>
-                                        </div>
-                                        <div class="blog-card-title">
-                                            How Can IoT Benefit Environment? Sustainable IoT Solutions
-                                        </div>
-                                        <div class="blog-card-author-list">
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-15.png" alt="">
-                                                </div>
-                                                <span>Vasyl Kuchma</span>
-                                            </div>
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-17.png" alt="">
-                                                </div>
-                                                <span>Natalia Barashkova</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                            <div class="projects-list-grid">
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">Electronic Health Records</h3>
+                                        <p class="projects-card-subtitle">For direct management patient's profile</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-ehr.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-ehr.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="blog-list-grid-item">
-                                    <a href="./blog-view.html" class="blog-card">
-                                        <div class="blog-card-image">
-                                            <img src="./htdocs/img/image-dublin.jpg" alt="">
-                                        </div>
-                                        <div class="blog-card-meta">
-                                            <span>June 14, 2023</span>
-                                            <span><i class="ph ph-clock"></i> 11 min read</span>
-                                            <span><i class="ph ph-eye"></i> 44</span>
-                                        </div>
-                                        <div class="blog-card-title">
-                                            Software Development Hub at Dublin Tech Summit
-                                        </div>
-                                        <div class="blog-card-author-list">
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-15.png" alt="">
-                                                </div>
-                                                <span>Vasyl Kuchma</span>
-                                            </div>
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-17.png" alt="">
-                                                </div>
-                                                <span>Natalia Barashkova</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">Terneo</h3>
+                                        <p class="projects-card-subtitle">IoT App for Heating Devices Control</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-terneo.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-terneo.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="blog-list-grid-item">
-                                    <a href="./blog-view.html" class="blog-card">
-                                        <div class="blog-card-image">
-                                            <img src="./htdocs/img/image-austria.jpg" alt="">
-                                        </div>
-                                        <div class="blog-card-meta">
-                                            <span>June 14, 2023</span>
-                                            <span><i class="ph ph-clock"></i> 11 min read</span>
-                                            <span><i class="ph ph-eye"></i> 44</span>
-                                        </div>
-                                        <div class="blog-card-title">
-                                            SDH at ViennaUP`23 in Austria
-                                        </div>
-                                        <div class="blog-card-author-list">
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-15.png" alt="">
-                                                </div>
-                                                <span>Vasyl Kuchma</span>
-                                            </div>
-                                            <div class="blog-card-author-list-item">
-                                                <div class="blog-card-author-list-image">
-                                                    <img src="./htdocs/img/image-17.png" alt="">
-                                                </div>
-                                                <span>Natalia Barashkova</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">IDIS</h3>
+                                        <p class="projects-card-subtitle">Telehealth system for remote patient diagnostics</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-idis.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-idis.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
                                 </div>
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">Learning Management System</h3>
+                                        <p class="projects-card-subtitle">The learning management platform for teaching children</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-lms.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-lms.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">Medstar</h3>
+                                        <p class="projects-card-subtitle">Web application for managing hospitals</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-mis.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-mis.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="projects-card">
+                                    <div class="projects-card-header">
+                                        <h3 class="projects-card-title">Terneo</h3>
+                                        <p class="projects-card-subtitle">IoT App for Heating Devices Control</p>
+                                    </div>
+                                    <div class="projects-card-body">
+                                        <img src="./htdocs/img/projects/banner-terneo.jpg" alt="" class="object-cover">
+                                        <a href="./project-view-terneo.html" class="btn btn-main projects-card-btn">View case<i class="ph ph-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="pager pager--blog">
+                            <div class="pager pager--mt">
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination justify-content-center">
                                         <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>

@@ -166,15 +166,16 @@ body{
   @include for-desktop-small-up{
     gap: 32px;
   }
-  &--jobs{
+  &--gap{
     gap: 28px;
+  }
+  &--s{
     .page-subtitle{
       max-width: 561px !important;
       margin: 0 auto;
     }
   }
-  &--about{
-    gap: 28px;
+  &--m{
     .page-subtitle{
       max-width: 786px !important;
       margin: 0 auto;
@@ -243,7 +244,7 @@ body{
   }
 }
 .pager{
-  &--blog{
+  &--mt{
     margin-top: 20px;
   }
 }
