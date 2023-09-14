@@ -599,3 +599,34 @@
     }
   }
 }
+.bg-parallax{
+  background-attachment: fixed !important;
+}
+.bg-ehr-p{
+  background: $blue25 url(../img/projects/bg-ehr-parallax.jpg);
+  height: 500px;
+  @include for-desktop-small-up{
+    height: 818px;
+  }
+}
+.bg-terneo-p{
+  background: #FFC107 url(../img/projects/bg-terneo-parallax.jpg);
+  height: 500px;
+  @include for-desktop-small-up{
+    height: 967px;
+  }
+}
+.bg-idis-p{
+  background: #D9E7F4 url(../img/projects/bg-idis-parallax.jpg);
+  height: 500px;
+  @include for-desktop-small-up{
+    height: 829px;
+  }
+}
+.bg-mis-p{
+  background: #D9E7F4 url(../img/projects/bg-mis-parallax.jpg);
+  height: 500px;
+  @include for-desktop-small-up{
+    height: 829px;
+  }
+}

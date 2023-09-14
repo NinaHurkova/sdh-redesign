@@ -84,6 +84,7 @@
     }
     @media(min-width: 576px){
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   &-social-grid {
@@ -127,6 +128,7 @@
       column-gap: 200px;
       margin: 0 auto;
       width: fit-content;
+      align-items: flex-start;
     }
     &-top{
       padding-top: 63px;
@@ -150,7 +152,7 @@
       justify-content: space-between;
     }
     &-contact{
-      gap: 82px;
+      column-gap: 82px;
     }
     &-bottom{
       padding-left: 40px;
@@ -168,8 +170,9 @@
   @media(min-width: 1400px){
     &-top-grid{
       width: 100%;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 60px;
+      padding-right: 60px;
+      justify-content: space-between;
     }
   }
 }

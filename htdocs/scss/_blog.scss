@@ -311,6 +311,12 @@
       font-size: 14px;
       line-height: 1.14;
       color: $gray400;
+      &:hover {
+        color: $gray800;
+      }
+      &.active {
+        color: $green;
+      }
     }
   }
   @include for-desktop-small-up{

@@ -28,6 +28,12 @@
     }
   }
 }
+.form-floating{
+  > .form-control,
+  > label{
+    padding: 16px;
+  }
+}
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label{
