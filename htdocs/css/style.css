@@ -492,10 +492,12 @@ body {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 16px;
+  margin-bottom: 16px;
 }
 @media (min-width: 1120px) {
   .page-header-block {
     gap: 32px;
+    margin-bottom: 0;
   }
 }
 .page-header-block--gap {
@@ -1755,10 +1757,10 @@ body {
 @media (min-width: 1120px) {
   .achievements-list-item {
     width: auto;
-    min-width: 80px;
+    min-width: 100px;
   }
   .achievements-list-item img {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -3267,6 +3269,7 @@ body {
 
 .bg-parallax {
   background-attachment: fixed !important;
+  background-size: 100% !important;
 }
 
 .bg-ehr-p {
