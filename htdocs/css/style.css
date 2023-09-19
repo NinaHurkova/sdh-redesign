@@ -84,6 +84,14 @@
   color: #FFC107;
 }
 
+.bg-mis {
+  background-color: #D9E7F4;
+}
+
+.bg-idis {
+  background-color: #D9E7F4;
+}
+
 .color-green-dark {
   color: #72AB2E;
 }
@@ -3015,9 +3023,11 @@ body {
     flex-shrink: 0;
     overflow: visible;
     z-index: 10;
-  }
-  .features-img img {
-    border-radius: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .features-img:before {
     content: "";
@@ -3026,7 +3036,7 @@ body {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     left: 100%;
-    width: 100%;
+    width: 54vw;
     height: 40vh;
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), color-stop(30%, rgb(255, 255, 255)), color-stop(70%, rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
@@ -3038,35 +3048,10 @@ body {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     left: 100%;
-    width: 100%;
+    width: 54vw;
     height: 40vh;
     background: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(30%, rgb(255, 255, 255)), color-stop(70%, rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
-  }
-  .features-img-item {
-    border: 15px solid #FFFFFF;
-    border-radius: 26px;
-  }
-  .features-img-item.img-1 {
-    width: 232px;
-    height: 467px;
-    -webkit-transform: rotate(15deg) translate(40%, 5%);
-    transform: rotate(15deg) translate(40%, 5%);
-  }
-  .features-img-item.img-2 {
-    width: 916px;
-    height: 620px;
-    -webkit-transform: rotate(15deg) translate(40%, 50%);
-    transform: rotate(15deg) translate(40%, 50%);
-  }
-  .features-bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: red;
   }
   .features-slider {
     position: relative;

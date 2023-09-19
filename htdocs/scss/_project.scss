@@ -391,16 +391,17 @@
       flex-shrink: 0;
       overflow: visible;
       z-index: 10;
-      img{
-        border-radius: $br-desktop-l;
-      }
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0.5s;
       &:before{
         content: '';
         position: absolute;
         bottom: 90vh;
         transform: translateY(100%);
         left: 100%;
-        width: 100%;
+        width: 54vw;
         height: 40vh;
         background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
       }
@@ -410,33 +411,10 @@
         top: 90vh;
         transform: translateY(-100%);
         left: 100%;
-        width: 100%;
+        width: 54vw;
         height: 40vh;
         background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
       }
-      &-item{
-        border: 15px solid #FFFFFF;
-        border-radius: 26px;
-        &.img-1{
-          width: 232px;
-          height: 467px;
-          transform: rotate(15deg) translate(40%, 5%);
-        }
-        &.img-2{
-          width: 916px;
-          height: 620px;
-          transform: rotate(15deg) translate(40%, 50%);
-        }
-      }
-    }
-    &-bg{
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: red;
     }
     &-slider{
       position: relative;
@@ -444,6 +422,7 @@
       display: block;
       align-self: flex-start;
       height: 100%;
+
     }
     &-slide{
       padding: 50px 32px;
