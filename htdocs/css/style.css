@@ -715,7 +715,8 @@ body {
 @media (min-width: 1120px) {
   .divided-list {
     margin-left: auto;
-    max-width: 890px;
+    max-width: 884px;
+    width: 67%;
     gap: 80px;
   }
   .divided-list-item {

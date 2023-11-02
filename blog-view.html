@@ -25,6 +25,9 @@
     <script src="htdocs/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
+    <link rel="stylesheet" href="htdocs/css/atom-one-dark.css">
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -183,6 +186,23 @@
                             <p>This category of frameworks contains a set of necessary tools for creating a full-fledged product, most often a large project. These include the MVC architecture, ORM (Object-Relational Mapping), template engines, and routers.</p>
                             <h4 id="chapter2">Django</h4>
                             <p>Django is a high-level framework that makes development faster and more productive. The framework is based on minimizing the amount of code, which reduces the time and cost of web development. Framework features:</p>
+                            <pre>
+                                <code>
+class Company(models.Model):
+   name = models.CharField(max_length=255)
+
+   class Meta:
+       db_table = 'company'
+
+
+class Customer(models.Model):
+   company = models.ForeignKey(Company, on_delete=models.PROTECT)
+   name = models.CharField(max_length=255)
+
+   class Meta:
+       db_table = 'customer'
+                                </code>
+                            </pre>
                             <ul>
                                 <li>MTV architecture (Model-Template-View).</li>
                                 <li>Built-in ORM (Object-Relational Mapping) without the need to write SQL queries.</li>
@@ -589,5 +609,7 @@
 
     <!--Extra js-->
     <script src="htdocs/js/blog.js"></script>
+    <script src="htdocs/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

@@ -346,7 +346,8 @@ body{
   }
   @include for-desktop-small-up{
     margin-left: auto;
-    max-width: 890px;
+    max-width: 884px;
+    width: 67%;
     gap: 80px;
     &-item{
       display: flex;

@@ -204,39 +204,43 @@
             </div>
             <section class="section-page section-page--sm">
                 <div class="container-xxl">
-                    <h3 class="title-chapter fw-700">Healthcare software <br> solutions we develop</h3>
-                    <div class="divided-list">
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">Electronic Health Records</h4>
-                            <p class="divided-list-text">EMR software stores medical data centrally, including history, lab results, treatment plans, etc. Seamless integration with EHR enables patient access and tracking of significant updates.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">Medical Information Systems</h4>
-                            <p class="divided-list-text">Our solutions include medical info systems, patient portals, and appointment scheduling apps, empowering patients to book appointments, check meds, request refills, consult online, and more.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">HIS & Practice Management Software</h4>
-                            <p class="divided-list-text">Our engineers create robust HMS/HIS and e-Health solutions to streamline info exchange among doctors, patients, and practitioners, enhancing decision-making through coordinated care among physicians and facilities.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">Telehealth Software</h4>
-                            <p class="divided-list-text">Maximize store-and-forward, remote monitoring, and real-time telemedicine. Our app offers advanced medical diagnostics, treatment, tracking, and preventive care, addressing healthcare industry challenges.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">PACS & DICOM Software</h4>
-                            <p class="divided-list-text">SDH specializes in PACS software for secure data access and storage in medical imaging, supporting DICOM networks and protocols.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">IoT Software</h4>
-                            <p class="divided-list-text">We create software, web, and mobile solutions that integrate with wearable medical devices (BP, ECG, heart rate, glucose monitoring, etc.) for tracking, managing, diagnosing, and monitoring public health.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">Healthcare Software Integration</h4>
-                            <p class="divided-list-text">We have a successful history of integrating third-party technologies (e.g., cloud billing, lab data transfer, insurance databases, communication modules, charting/reporting) into medical products.</p>
-                        </div>
-                        <div class="divided-list-item">
-                            <h4 class="divided-list-title">AI & Machine Learning</h4>
-                            <p class="divided-list-text">Our R&D team uses advanced AI and ML algorithms to analyze complex health data and predict disease likelihood and patient outcomes.</p>
+                    <div class="sticky-block">
+                        <h3 class="title-chapter fw-700">
+                            <span class="sticky-title">Healthcare software <br> solutions we develop</span>
+                        </h3>
+                        <div class="divided-list">
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">Electronic Health Records</h4>
+                                <p class="divided-list-text">EMR software stores medical data centrally, including history, lab results, treatment plans, etc. Seamless integration with EHR enables patient access and tracking of significant updates.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">Medical Information Systems</h4>
+                                <p class="divided-list-text">Our solutions include medical info systems, patient portals, and appointment scheduling apps, empowering patients to book appointments, check meds, request refills, consult online, and more.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">HIS & Practice Management Software</h4>
+                                <p class="divided-list-text">Our engineers create robust HMS/HIS and e-Health solutions to streamline info exchange among doctors, patients, and practitioners, enhancing decision-making through coordinated care among physicians and facilities.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">Telehealth Software</h4>
+                                <p class="divided-list-text">Maximize store-and-forward, remote monitoring, and real-time telemedicine. Our app offers advanced medical diagnostics, treatment, tracking, and preventive care, addressing healthcare industry challenges.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">PACS & DICOM Software</h4>
+                                <p class="divided-list-text">SDH specializes in PACS software for secure data access and storage in medical imaging, supporting DICOM networks and protocols.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">IoT Software</h4>
+                                <p class="divided-list-text">We create software, web, and mobile solutions that integrate with wearable medical devices (BP, ECG, heart rate, glucose monitoring, etc.) for tracking, managing, diagnosing, and monitoring public health.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">Healthcare Software Integration</h4>
+                                <p class="divided-list-text">We have a successful history of integrating third-party technologies (e.g., cloud billing, lab data transfer, insurance databases, communication modules, charting/reporting) into medical products.</p>
+                            </div>
+                            <div class="divided-list-item">
+                                <h4 class="divided-list-title">AI & Machine Learning</h4>
+                                <p class="divided-list-text">Our R&D team uses advanced AI and ML algorithms to analyze complex health data and predict disease likelihood and patient outcomes.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -690,5 +694,38 @@
     <script src="htdocs/js/scrollProject.js"></script>
     <script src="htdocs/js/jquery-visible.min.js"></script>
     <script src="htdocs/js/jquery-scrollRow.js"></script>
+    <script type="text/javascript">
+        function stickyTitleBlock() {
+
+            const stickyBlock = $('.sticky-block');
+            const stickyTitle = $(stickyBlock).find('.sticky-title');
+            const stickyTop = $(stickyTitle).offset().top;
+            const blockHeight = $(stickyBlock).height();
+            const stickyStop = $(stickyBlock).offset().top + blockHeight;
+            const headerHeight = $('header').height() + 10;
+
+            $(window).scroll(function() {
+                let windowTop = $(window).scrollTop();
+                if (stickyTop < windowTop && stickyStop - $(stickyTitle).height() > windowTop && window.matchMedia( "(min-width: 1120px)" ).matches) {
+                    $(stickyTitle).css({
+                        'position': 'fixed',
+                        'top': headerHeight,
+                        'max-width': '436px'
+                    });
+                } else {
+                    $(stickyTitle).css({
+                        'position': 'relative',
+                        'top': 'auto',
+                        'max-width': '100%'
+                    });
+                }
+            })
+
+        }
+
+        stickyTitleBlock();
+
+        $(window).on("resize", stickyTitleBlock);
+    </script>
 </body>
 </html>
